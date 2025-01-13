@@ -1019,7 +1019,12 @@ line-height: 32px; /* 160% */
   gap: 28px;
   align-items: center;
 }
-
+.pg8-txt-1-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 .page8-txt1{
   display: flex;
   align-items: center;
