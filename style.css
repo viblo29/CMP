@@ -24,8 +24,8 @@ body {
   height: 100vh;
   overflow: scroll;
 
-  padding-left: 135px;
-  padding-right: 135px;
+  /* padding-left: 135px;
+  padding-right: 135px; */
   padding-top: 16px;
   position: relative;
 }
@@ -41,6 +41,8 @@ body {
 }
 
 .header {
+  padding-left: 135px;
+  padding-right: 135px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,6 +102,8 @@ body {
   display: flex;
   gap: 152px;
   /* justify-content: space-evenly; */
+  padding-left: 135px;
+  padding-right: 135px;
 }
 
 .page1-texts {
@@ -280,6 +284,8 @@ body {
   margin-top: 352px;
   display: flex;
   gap: 84px;
+  padding-left: 135px;
+  padding-right: 135px;
 }
 
 .img2 {
@@ -441,6 +447,8 @@ body {
 .page3 {
   position: absolute;
   margin-top: 264px;
+  padding-left: 135px;
+  padding-right: 135px;
 }
 .page3-boxes {
   display: flex;
@@ -485,6 +493,8 @@ body {
   margin-top: 936px;
   display: flex;
   gap: 154px;
+  padding-left: 135px;
+  padding-right: 135px;
 }
 .page4-txts {
   padding-top: 59px;
@@ -631,6 +641,8 @@ align-items: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 135px;
+  padding-right: 135px;
 }
 .page5-txts{
   display: flex;
@@ -754,12 +766,16 @@ line-height: 32px; /* 200% */
   margin-top: 144px;
   display: flex;
   justify-content: space-between;
+  padding-left: 135px;
+  padding-right: 135px;
 }
 
 .page6{
   margin-top: 210px;
   display: flex;
   gap: 119px;
+  padding-left: 135px;
+  padding-right: 135px;
 }
 
 .page6-txts{
@@ -840,7 +856,6 @@ background: #FFFAEA;
   color: #333;
 font-family: "Hind Siliguri";
 font-size: 40px;
-font-style: normal;
 font-weight: 700;
 line-height: 48px; /* 120% */
 letter-spacing: -1px;
@@ -848,9 +863,6 @@ letter-spacing: -1px;
 .pg6-logo-txt2{
   color: rgba(51, 51, 51, 0.50);
 font-family: "Work Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
 line-height: 32px; /* 200% */
 }
 .page6-logo2{
@@ -956,9 +968,82 @@ background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg
 
 .page7{
   margin-top: 158px;
-  padding-left: -135px;
-  padding-right: -135px;
-  width: 100vw;
-  background-color: red;
-  height: 300px;
+  height: 384px;
+  background: #F07566;
+  display: flex;
+}
+.page7-vid{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pg7-vid{
+  width: 371px;
+height: 508px;
+
+}
+.page7-txts{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-top: 79px;
+  padding-bottom: 79px;
+}
+.pg7-txt1{
+  color: #FFF;
+font-family: "Hind Siliguri";
+font-size: 56px;
+font-weight: 700;
+line-height: 64px; /* 114.286% */
+letter-spacing: -1px;
+width: 510px;
+}
+.pg7-txt2{
+  width: 570px;
+  color: #FFF;
+font-family: "Work Sans";
+font-size: 20px;
+line-height: 32px; /* 160% */
+}
+
+.page8{
+  margin-top: 139px;
+}
+.page8-txts{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+}
+
+.page8-txt1{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #F07566;
+font-family: "Hind Siliguri";
+font-weight: 700;
+line-height: 32px; /* 200% */
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+.page8-txt2{
+  color: #333;
+text-align: center;
+font-family: "Hind Siliguri";
+font-size: 56px;
+font-weight: 700;
+line-height: 64px; /* 114.286% */
+letter-spacing: -1px;
+}
+.page8-txt3{
+  color: rgba(51, 51, 51, 0.50);
+text-align: center;
+font-family: "Work Sans";
+line-height: 32px; /* 200% */
+width: 770px;
 }
