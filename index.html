@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+  
+      body {
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .swiper {
+        margin-top: 61px;
+        width: 100%;
+        height: 100%;
+
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
 </head>
 <body>
 
@@ -367,14 +407,114 @@
                 </div>
                 <div class="page8-txt3">Formed a great hindrance to my speed, I resolved, contrary to my first intention, to make the being of a gigantic stature that is to say, about eight feet in height.</div>
             </div>
+              <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swper">
+                        <div class="swiper-slide1">
+                            <div class="slideBox-1">
+                                <div class="slideBox-1-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Ingo Schimpff</div>
+                                    <div class="slideBox-txt-2">Manager</div>
+                                </div>
+                            </div>
+                            <div class="slideBox-2">
+                                <div class="slideBox-2-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Gauthier Drewitt</div>
+                                    <div class="slideBox-txt-2">Director</div>
+                                </div>
+                            </div>
+                            <div class="slideBox-1">
+                                <div class="slideBox-3-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Winny Rearie</div>
+                                    <div class="slideBox-txt-2">Manager</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swper">
+                        <div class="swiper-slide1">
+                            <div class="slideBox-1">
+                                <div class="slideBox-1-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Ingo Schimpff</div>
+                                    <div class="slideBox-txt-2">Manager</div>
+                                </div>
+                            </div>
+                            <div class="slideBox-2">
+                                <div class="slideBox-2-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Gauthier Drewitt</div>
+                                    <div class="slideBox-txt-2">Director</div>
+                                </div>
+                            </div>
+                            <div class="slideBox-1">
+                                <div class="slideBox-3-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Winny Rearie</div>
+                                    <div class="slideBox-txt-2">Manager</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swper">
+                        <div class="swiper-slide1">
+                            <div class="slideBox-1">
+                                <div class="slideBox-1-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Ingo Schimpff</div>
+                                    <div class="slideBox-txt-2">Manager</div>
+                                </div>
+                            </div>
+                            <div class="slideBox-2">
+                                <div class="slideBox-2-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Gauthier Drewitt</div>
+                                    <div class="slideBox-txt-2">Director</div>
+                                </div>
+                            </div>
+                            <div class="slideBox-1">
+                                <div class="slideBox-3-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Winny Rearie</div>
+                                    <div class="slideBox-txt-2">Manager</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
 
         <div class="swiper">
 
         </div>
 
+
     </div>
     <div class="footer"></div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
     <script src="./script.js"></script>
 </body>
 </html>
