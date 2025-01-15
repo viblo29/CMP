@@ -101,6 +101,7 @@ nav a {
 }
 
 .page1 {
+  
   margin-top: 128px;
   display: flex;
   gap: 152px;
@@ -1255,11 +1256,15 @@ margin-right: 30px;
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 2000px) {
-  body {
+  body{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
   }
-
+  .container{
+    width: 1440px;
+  }
   .page1 {
     display: flex;
     justify-content: center;
