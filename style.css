@@ -106,6 +106,7 @@ nav a {
   gap: 152px;
   padding-left: 135px;
   padding-right: 135px;
+  justify-content: center;
 }
 
 .page1-texts {
@@ -298,6 +299,7 @@ nav a {
   gap: 84px;
   padding-left: 135px;
   padding-right: 135px;
+  justify-content: center;
 }
 
 .img2 {
@@ -464,6 +466,8 @@ nav a {
   margin-top: 264px;
   padding-left: 135px;
   padding-right: 135px;
+  justify-content: center;
+
 }
 
 .page3-boxes {
@@ -514,6 +518,8 @@ nav a {
   gap: 154px;
   padding-left: 135px;
   padding-right: 135px;
+  justify-content: center;
+
 }
 
 .page4-txts {
@@ -804,6 +810,8 @@ nav a {
   gap: 119px;
   padding-left: 135px;
   padding-right: 135px;
+  justify-content: center;
+
 }
 
 .page6-txts {
@@ -1108,6 +1116,10 @@ nav a {
 
 .swiper-pagination-bullet {
   background-color: #FFE4E1;
+}
+.swiper-wrapper{
+  display: flex;
+  gap: 10px;
 }
 
 .swper {
