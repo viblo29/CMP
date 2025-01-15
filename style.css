@@ -1093,8 +1093,10 @@ nav a {
 }
 
 .page8-txt3 {
+  width: 770px;
   color: rgba(51, 51, 51, 0.50);
   text-align: center;
+  font-size: 16px;
   font-family: "Work Sans";
   line-height: 32px;
   width: 770px;
@@ -1110,7 +1112,6 @@ nav a {
 }
 
 .swper {
-  padding-top: 61px;
   height: 512px;
   padding-left: 135px;
   padding-right: 135px;
