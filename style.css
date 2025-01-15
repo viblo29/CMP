@@ -100,6 +100,7 @@
   /* justify-content: space-evenly; */
   padding-left: 135px;
   padding-right: 135px;
+  justify-content: center;
 }
 
 .page1-texts {
@@ -282,6 +283,7 @@
   gap: 84px;
   padding-left: 135px;
   padding-right: 135px;
+  justify-content: center;
 }
 
 .img2 {
@@ -445,6 +447,8 @@
   margin-top: 264px;
   padding-left: 135px;
   padding-right: 135px;
+  justify-content: center;
+
 }
 .page3-boxes {
   position: absolute;
@@ -492,6 +496,8 @@
   gap: 154px;
   padding-left: 135px;
   padding-right: 135px;
+  justify-content: center;
+
 }
 .page4-txts {
   padding-top: 59px;
@@ -773,6 +779,8 @@ line-height: 32px; /* 200% */
   gap: 119px;
   padding-left: 135px;
   padding-right: 135px;
+  justify-content: center;
+
 }
 
 .page6-txts{
@@ -1057,6 +1065,10 @@ width: 770px;
 
 .swiper-pagination-bullet {
   background-color: #FFE4E1;
+}
+.swiper-wrapper{
+  display: flex;
+  gap: 10px;
 }
 
 .swper{
