@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Hind+Siliguri:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Hind+Siliguri:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +25,7 @@
   padding-right: 135px; */
   padding-top: 16px;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 .bg-img {
@@ -45,16 +47,17 @@
   color: #333;
   font-family: "Hind Siliguri", serif;
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 48px; /* 120% */
+  line-height: 48px;
   letter-spacing: -1px;
 }
+
 .header-left {
   display: flex;
   align-items: center;
   gap: 42px;
 }
+
 .menu {
   width: 463px;
   display: flex;
@@ -62,10 +65,15 @@
   color: #333;
   font-family: "Work Sans", serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
 }
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
 .header-btn {
   position: relative;
   color: #fff;
@@ -74,9 +82,7 @@
   text-align: center;
   font-family: "Hind Siliguri", serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding-top: 11px;
@@ -87,6 +93,7 @@
   border: 1px solid rgba(240, 117, 102, 0.24);
   background: #f07566;
 }
+
 .header-btn:hover {
   cursor: pointer;
   color: #f07566;
@@ -97,7 +104,6 @@
   margin-top: 128px;
   display: flex;
   gap: 152px;
-  /* justify-content: space-evenly; */
   padding-left: 135px;
   padding-right: 135px;
 }
@@ -122,9 +128,8 @@
   color: #f07566;
   font-family: "Hind Siliguri", serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -134,11 +139,10 @@
   color: #4db282;
   font-family: "Hind Siliguri", serif;
   font-size: 72px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 80px; /* 111.111% */
-  letter-spacing: -1px;
+  line-height: 80px;
 }
+
 .underline {
   width: 347px;
   height: 23px;
@@ -151,9 +155,8 @@
   color: #333;
   font-family: "Work Sans", serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
 }
 
 .btn2 {
@@ -164,9 +167,7 @@
   text-align: center;
   font-family: "Hind Siliguri", serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding-top: 11px;
@@ -175,6 +176,7 @@
   border: 1px solid rgba(240, 117, 102, 0.24);
   background: #f07566;
 }
+
 .btn2:hover {
   cursor: pointer;
   color: #f07566;
@@ -186,6 +188,7 @@
   width: 548px;
   height: 530px;
 }
+
 .page1-red {
   position: absolute;
   right: 0;
@@ -195,6 +198,7 @@
   border-radius: 8px;
   background: #f07566;
 }
+
 .page1-yellow {
   position: absolute;
   right: 38px;
@@ -203,7 +207,11 @@
   height: 480px;
   border-radius: 100px 8px 8px 8px;
   background: #fbd34b;
+  background-image: url(./marketing.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .page1-custom {
   position: absolute;
   left: 0;
@@ -233,40 +241,47 @@
   border-radius: 4px;
   background: #fbd34b;
 }
+
 .b2 {
   width: 16px;
   height: 22px;
   border-radius: 4px;
   background: #4db282;
 }
+
 .b3 {
   width: 16px;
   height: 30px;
   border-radius: 4px;
   background: #f07566;
 }
+
 .b4 {
   width: 16px;
   height: 39px;
   border-radius: 4px;
   background: #fbd34b;
 }
+
 .b5 {
   width: 16px;
   height: 52px;
   border-radius: 4px;
   background: #4db282;
 }
+
 .b6 {
   width: 16px;
   height: 74px;
   border-radius: 4px;
   background: #f07566;
 }
+
 .bl-img {
   position: absolute;
   top: 16px;
 }
+
 .page1-icon {
   position: absolute;
   width: 150px;
@@ -276,8 +291,9 @@
   bottom: 310px;
   right: 430px;
 }
+
 .page2 {
-  margin-top: 352px;
+  margin-top: 300px;
   display: flex;
   gap: 84px;
   padding-left: 135px;
@@ -289,6 +305,7 @@
   width: 596px;
   height: 504px;
 }
+
 .page2-yellow {
   position: absolute;
   bottom: 40px;
@@ -298,6 +315,7 @@
   border-radius: 12px;
   background: #fbd34b;
 }
+
 .page2-red {
   position: absolute;
   bottom: 27px;
@@ -306,6 +324,7 @@
   border-radius: 8px;
   background: #f07566;
 }
+
 .page2-pic {
   position: absolute;
   left: 30px;
@@ -314,7 +333,11 @@
   height: 448px;
   border-radius: 8px 100px 8px 8px;
   background: #d8d8d8;
+  background-image: url(./business.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .page2-custom {
   position: absolute;
   bottom: 0px;
@@ -328,6 +351,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .page2-icon {
   position: absolute;
   right: 490px;
@@ -357,9 +381,8 @@
   color: #f07566;
   font-family: "Hind Siliguri", serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -369,9 +392,8 @@
   color: #333;
   font-family: "Hind Siliguri";
   font-size: 56px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 64px; /* 114.286% */
+  line-height: 64px;
   letter-spacing: -1px;
 }
 
@@ -385,9 +407,8 @@
   color: #333;
   font-family: "Hind Siliguri";
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
 }
 
 .pg2-txt-4 {
@@ -397,9 +418,8 @@
   color: #333;
   font-family: "Work Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
 }
 
 .page2-texts-btn {
@@ -417,13 +437,12 @@
   text-align: center;
   font-family: "Hind Siliguri";
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
   border: 1px solid rgba(240, 117, 102, 0.24);
 }
+
 .btn3:hover {
   cursor: pointer;
   color: #f07566;
@@ -446,6 +465,7 @@
   padding-left: 135px;
   padding-right: 135px;
 }
+
 .page3-boxes {
   position: absolute;
   display: flex;
@@ -453,6 +473,7 @@
   align-items: center;
   gap: 30px;
 }
+
 .page3-box {
   display: flex;
   flex-direction: column;
@@ -464,22 +485,23 @@
   border: 1px solid #e6edf5;
   background: #fff;
 }
+
 .page3-h1 {
   color: #333;
   font-family: "Hind Siliguri";
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
 }
+
 .page3-h2 {
   color: rgba(51, 51, 51, 0.5);
   font-family: "Work Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
 }
+
 .page3-txt {
   display: flex;
   flex-direction: column;
@@ -493,6 +515,7 @@
   padding-left: 135px;
   padding-right: 135px;
 }
+
 .page4-txts {
   padding-top: 59px;
   display: flex;
@@ -507,9 +530,8 @@
   color: #f07566;
   font-family: "Hind Siliguri";
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -519,24 +541,23 @@
   flex-direction: column;
   gap: 28px;
 }
+
 .pg4-txt-2 {
   width: 387px;
   color: #333;
   font-family: "Hind Siliguri";
   font-size: 56px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 64px; /* 114.286% */
-  letter-spacing: -1px;
+  line-height: 64px;
 }
+
 .pg4-txt-3 {
   width: 470px;
   color: #333;
   font-family: "Work Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 200% */
+  line-height: 32px;
 }
 
 .pg4-txt-4 {
@@ -553,28 +574,27 @@
   gap: 6px;
 }
 
-.pg4-txt-4-h1{
+.pg4-txt-4-h1 {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.modernTech{
+.modernTech {
   color: #333;
-font-family: "Hind Siliguri";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px; /* 133.333% */
+  font-family: "Hind Siliguri";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
 }
-.pg4-txt-4-h2{
+
+.pg4-txt-4-h2 {
   width: 406px;
   color: rgba(51, 51, 51, 0.50);
-font-family: "Work Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .img4 {
@@ -592,38 +612,45 @@ line-height: 24px; /* 171.429% */
   right: 15px;
   bottom: 32px;
 }
-.pg4-red{
+
+.pg4-red {
   width: 216px;
-height: 128px;
-border-radius: 8px;
-background: #F07566;
-position: absolute;
-top: 0;
-right: 0;
+  height: 128px;
+  border-radius: 8px;
+  background: #F07566;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.pg4-pic{
+
+.pg4-pic {
   width: 462px;
-height: 480px;
-border-radius: 100px 8px 8px 8px;
-background: #D8D8D8;
-position: absolute;
-bottom: 48px;
-right: 30px;
+  height: 480px;
+  border-radius: 100px 8px 8px 8px;
+  background: #D8D8D8;
+  position: absolute;
+  bottom: 48px;
+  right: 30px;
+  background-image: url(./business1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.pg4-custom{
+
+.pg4-custom {
   width: 216px;
-height: 128px;
-border-radius: 8px;
-background: #FFF;
-box-shadow: 0px 24px 48px 0px rgba(86, 66, 0, 0.08);
-position: absolute;
-bottom: 0;
-right: 153px;
-display: flex;
-justify-content: center;
-align-items: center;
+  height: 128px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 24px 48px 0px rgba(86, 66, 0, 0.08);
+  position: absolute;
+  bottom: 0;
+  right: 153px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pg4-icon{
+
+.pg4-icon {
   position: absolute;
   bottom: 300px;
   right: 420px;
@@ -633,7 +660,7 @@ align-items: center;
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="148" height="148" viewBox="0 0 148 148" fill="none"><g filter="url(%23filter0_d_0_150)"><path fill-rule="evenodd" clip-rule="evenodd" d="M74 108C46.3858 108 24 85.6142 24 58C24 30.3858 46.3858 8 74 8C101.614 8 124 30.3858 124 58V100C124 104.418 120.418 108 116 108H74Z" fill="%234DB282"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M83 40H89C90.653 40 92 41.347 92 43V79C92 80.653 90.653 82 89 82H59C57.347 82 56 80.653 56 79V43C56 41.347 57.347 40 59 40H65V38.5C65 37.672 65.672 37 66.5 37H69.755C70.376 35.254 72.044 34 74 34C75.956 34 77.624 35.254 78.245 37H81.5C82.328 37 83 37.672 83 38.5V40ZM71 40H68V43H80V40H77C76.172 40 75.5 39.328 75.5 38.5C75.5 37.672 74.828 37 74 37C73.172 37 72.5 37.672 72.5 38.5C72.5 39.328 71.828 40 71 40ZM59 79V43H65V44.5C65 45.328 65.672 46 66.5 46H81.5C82.328 46 83 45.328 83 44.5V43H89V79H59ZM73.562 52.441C72.977 51.856 72.026 51.853 71.438 52.438L66.5 57.379L64.562 55.438C63.977 54.853 63.026 54.853 62.441 55.438C61.856 56.023 61.856 56.974 62.441 57.559L65.441 60.559C65.732 60.853 66.116 61 66.5 61C66.884 61 67.268 60.853 67.562 60.562L73.562 54.562C74.147 53.977 74.147 53.026 73.562 52.441ZM73.562 64.441C72.977 63.856 72.026 63.853 71.438 64.438L66.5 69.379L64.562 67.441C63.977 66.856 63.026 66.856 62.441 67.441C61.856 68.026 61.856 68.977 62.441 69.562L65.441 72.562C65.732 72.853 66.116 73 66.5 73C66.884 73 67.268 72.853 67.562 72.562L73.562 66.562C74.147 65.977 74.147 65.026 73.562 64.441ZM77 56.5C77 55.672 77.672 55 78.5 55H84.5C85.328 55 86 55.672 86 56.5C86 57.328 85.328 58 84.5 58H78.5C77.672 58 77 57.328 77 56.5ZM86 68.5C86 67.672 85.328 67 84.5 67H78.5C77.672 67 77 67.672 77 68.5C77 69.328 77.672 70 78.5 70H84.5C85.328 70 86 69.328 86 68.5Z" fill="white"/><defs><filter id="filter0_d_0_150" x="0" y="0" width="148" height="148" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="16"/><feGaussianBlur stdDeviation="12"/><feColorMatrix type="matrix" values="0 0 0 0 0.303864 0 0 0 0 0.234804 0 0 0 0 0 0 0 0 0.16109 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_150"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_150" result="shape"/></filter></defs></svg>');
 }
 
-.page5{
+.page5 {
   margin-top: 219px;
   display: flex;
   flex-direction: column;
@@ -641,125 +668,129 @@ align-items: center;
   padding-left: 135px;
   padding-right: 135px;
 }
-.page5-txts{
+
+.page5-txts {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.page5-txt-1{
+.page5-txt-1 {
   display: flex;
   align-items: center;
-  gap: 10px ;
+  gap: 10px;
   color: #F07566;
-font-family: "Hind Siliguri";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px; /* 200% */
-letter-spacing: 1px;
-text-transform: uppercase;
+  font-family: "Hind Siliguri";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
-.page5-txt-2{
+
+.page5-txt-2 {
   color: #333;
-text-align: center;
-font-family: "Hind Siliguri";
-font-size: 56px;
-font-style: normal;
-font-weight: 700;
-line-height: 64px; /* 114.286% */
-letter-spacing: -1px;
+  text-align: center;
+  font-family: "Hind Siliguri";
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
 }
-.page5-txt-3{
+
+.page5-txt-3 {
   width: 770px;
   color: rgba(51, 51, 51, 0.50);
-text-align: center;
-font-family: "Work Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 32px; /* 200% */
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
 }
-.page5-txt-2-3{
+
+.page5-txt-2-3 {
   display: flex;
   flex-direction: column;
   gap: 28px;
 }
 
-.page5-img-1-2{
+.page5-img-1-2 {
   margin-top: 61px;
   display: flex;
   gap: 30px;
-
 }
-.page5-box{
+
+.page5-box {
   margin-top: 61px;
   width: 570px;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-.page5-img-txts{
+
+.page5-img-txts {
   display: flex;
   justify-content: start;
   align-items: end;
   width: 570px;
-height: 384px;
-border-radius: 8px;
-background: #D8D8D8;
+  height: 384px;
+  border-radius: 8px;
+  background: #D8D8D8;
+
 }
-.page5-img-icon{
+
+.page5-img-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 96px;
-height: 96px;
-border-radius: 0px 24px 0px 8px;
-background: #4DB282;
+  height: 96px;
+  border-radius: 0px 24px 0px 8px;
+  background: #4DB282;
 }
-.page5-img-icon-txt{
-color: #FFF;
-text-align: center;
-font-family: "Hind Siliguri";
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: 48px; /* 120% */
-letter-spacing: -1px;
+
+.page5-img-icon-txt {
+  color: #FFF;
+  text-align: center;
+  font-family: "Hind Siliguri";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
 }
-.page5-box-txts{
+
+.page5-box-txts {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
-.page5-box-txt-1{
+
+.page5-box-txt-1 {
   color: #333;
-text-align: center;
-font-family: "Hind Siliguri";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px; /* 133.333% */
+  text-align: center;
+  font-family: "Hind Siliguri";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
 }
-.page5-box-txt-2{
+
+.page5-box-txt-2 {
   color: rgba(51, 51, 51, 0.50);
-text-align: center;
-font-family: "Work Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 32px; /* 200% */
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
 }
-.page5-img-2-3{
+
+.page5-img-2-3 {
   display: flex;
   gap: 30px;
-
 }
-.page5-btn{
+
+.page5-btn {
   margin-top: 69px;
 }
 
-.logos{
+.logos {
   margin-top: 144px;
   display: flex;
   justify-content: space-between;
@@ -767,7 +798,7 @@ line-height: 32px; /* 200% */
   padding-right: 135px;
 }
 
-.page6{
+.page6 {
   margin-top: 210px;
   display: flex;
   gap: 119px;
@@ -775,136 +806,142 @@ line-height: 32px; /* 200% */
   padding-right: 135px;
 }
 
-.page6-txts{
+.page6-txts {
   display: flex;
   flex-direction: column;
   gap: 28px;
   padding-top: 43px;
 }
 
-.page6-txt-1-2{
+.page6-txt-1-2 {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.page6-txt-1{
+.page6-txt-1 {
   display: flex;
   align-items: center;
   gap: 10px;
   color: #F07566;
-font-family: "Hind Siliguri";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px; /* 200% */
-letter-spacing: 1px;
-text-transform: uppercase;
+  font-family: "Hind Siliguri";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.page6-txt-2{
+.page6-txt-2 {
   width: 481px;
   color: #333;
-font-family: "Hind Siliguri";
-font-size: 56px;
-font-style: normal;
-font-weight: 700;
-line-height: 64px; /* 114.286% */
-letter-spacing: -1px;
+  font-family: "Hind Siliguri";
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
 }
 
-.page6-txt-3-logos{
+.page6-txt-3-logos {
   width: 470px;
   color: #333;
-font-family: "Work Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 32px; /* 200% */
-display: flex;
-flex-direction: column;
-gap: 40px;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.page6-logos{
+.page6-logos {
   display: flex;
   gap: 91px;
 }
 
-.page6-logo-txt-box{
+.page6-logo-txt-box {
   display: flex;
   gap: 24px;
 }
 
-.page6-logo{
+.page6-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 56px;
-height: 56px;
-border-radius: 8px;
-background: #FFFAEA;
+  height: 56px;
+  border-radius: 8px;
+  background: #FFFAEA;
 }
-.page6-logo-txts{
+
+.page6-logo-txts {
   display: flex;
   flex-direction: column;
 }
-.pg6-logo-txt1{
+
+.pg6-logo-txt1 {
   color: #333;
-font-family: "Hind Siliguri";
-font-size: 40px;
-font-weight: 700;
-line-height: 48px; /* 120% */
-letter-spacing: -1px;
+  font-family: "Hind Siliguri";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
 }
-.pg6-logo-txt2{
+
+.pg6-logo-txt2 {
   color: rgba(51, 51, 51, 0.50);
-font-family: "Work Sans";
-line-height: 32px; /* 200% */
+  font-family: "Work Sans";
+  line-height: 32px;
 }
-.page6-logo2{
+
+.page6-logo2 {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 56px;
-height: 56px;
-border-radius: 8px;
-background: #EEF6FF;
+  height: 56px;
+  border-radius: 8px;
+  background: #EEF6FF;
 }
 
-.page6-img{
+.page6-img {
   width: 570px;
   height: 512px;
   position: relative;
 }
-.pg6-yellow{
+
+.pg6-yellow {
   position: absolute;
   right: 55px;
   bottom: 16px;
   width: 255px;
-height: 319px;
-border-radius: 12px;
-background: #FBD34B;
+  height: 319px;
+  border-radius: 12px;
+  background: #FBD34B;
 }
-.pg6-red{
+
+.pg6-red {
   position: absolute;
   right: 227px;
   bottom: 0;
   width: 216px;
-height: 128px;
-border-radius: 8px;
-background: #F07566;
+  height: 128px;
+  border-radius: 8px;
+  background: #F07566;
 }
-.pg6-pic{
+
+.pg6-pic {
   position: absolute;
   right: 70px;
   bottom: 32px;
   width: 462px;
-height: 480px;
-border-radius: 100px 8px 8px 8px;
-background: #D8D8D8;
+  height: 480px;
+  border-radius: 100px 8px 8px 8px;
+  background: #D8D8D8;
+  background-image: url(./orb.png.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.pg6-custom{
+
+.pg6-custom {
   position: absolute;
   bottom: 192px;
   right: 0;
@@ -914,74 +951,83 @@ background: #D8D8D8;
   justify-content: center;
   gap: 11px;
   width: 148px;
-height: 176px;
-border-radius: 8px;
-background: #FFF;
-box-shadow: 0px 24px 48px 0px rgba(86, 66, 0, 0.08);
+  height: 176px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 24px 48px 0px rgba(86, 66, 0, 0.08);
 }
 
-.pg6-custom-rects{
+.pg6-custom-rects {
   display: flex;
   align-items: end;
   gap: 12px;
 }
-.pg6-1{
+
+.pg6-1 {
   width: 16px;
-height: 55px;
-border-radius: 4px;
-background: #F07566;
-}
-.pg6-2{
-  width: 16px;
-height: 69px;
-border-radius: 4px;
-background: #FBD34B;
-}
-.pg6-3{
-  width: 16px;
-height: 55px;
-border-radius: 4px;
-background: #4DB282;
-}
-.pg6-4{
-  width: 16px;
-height: 79px;
-border-radius: 4px;
-background: #F07566;
-}
-.pg6-custom-img{
-  width: 119px;
-height: 35px;
-}
-.pg6-icon{
-position: absolute;
-width: 148px;
-height: 148px;
-bottom: 280px;
-right: 445px;
-background-repeat: no-repeat;
-background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="148" height="148" viewBox="0 0 148 148" fill="none"><g filter="url(%23filter0_d_0_244)"><path fill-rule="evenodd" clip-rule="evenodd" d="M74 108C46.3858 108 24 85.6142 24 58C24 30.3858 46.3858 8 74 8C101.614 8 124 30.3858 124 58V100C124 104.418 120.418 108 116 108H74Z" fill="%234DB282"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M95.7955 37.4469C95.723 36.7932 95.207 36.2768 94.5529 36.2043C83.4237 34.9684 73.9367 39.42 66.1981 47.3855C63.9835 49.6651 62.0626 52.0781 60.423 54.4068C57.648 54.2941 54.5712 55.5494 52.3899 57.7306L48.4119 61.7084C47.9618 62.1584 47.8702 62.855 48.1885 63.4061C48.5067 63.9573 49.1553 64.2257 49.7706 64.0613C50.6935 63.8133 52.1933 63.5251 53.634 63.4581C54.1607 63.4336 54.5983 63.4413 54.962 63.4691C54.5667 64.2294 54.2129 64.9342 53.9231 65.5116L53.923 65.5117L53.9227 65.5123L53.9227 65.5124L53.9226 65.5125C53.5692 66.2167 53.3109 66.7312 53.1883 66.9258C52.839 67.4817 52.9199 68.205 53.3843 68.6693L55.6861 70.9709C52.3361 75.5394 52.2808 77.8792 52.2925 78.2106C52.3171 78.9126 52.8646 79.5703 53.7714 79.5703C54.5566 79.5703 56.8086 79.2371 60.9082 76.1928L63.3294 78.6138C63.7971 79.0814 64.5277 79.1598 65.0844 78.8024C65.3136 78.655 65.8917 78.3607 66.6663 77.9664C67.1716 77.7092 67.7605 77.4094 68.3908 77.0801C68.4172 78.2699 68.2557 80.0171 67.9052 82.3854C67.7059 83.7286 69.339 84.5372 70.2908 83.5858L74.2689 79.608C76.3202 77.5569 77.5097 74.5104 77.4218 71.6525C79.8752 69.9382 82.4275 67.916 84.8106 65.5792C92.7008 57.8423 97.0158 48.4277 95.7955 37.4469ZM93.1052 38.8941C93.3297 41.9264 93.0901 44.8656 92.3925 47.7099C90.6598 47.1643 88.966 46.0924 87.4362 44.5631C85.9009 43.0276 84.8268 41.3269 84.2833 39.5881C87.1267 38.9007 90.068 38.6678 93.1052 38.8941ZM54.3786 59.7195L53.4506 60.6478C54.4368 60.5991 55.4608 60.6368 56.3819 60.8401C56.9782 59.7792 57.6542 58.6296 58.4127 57.4259C56.9609 57.7892 55.5011 58.5974 54.3786 59.7195ZM56.3262 66.994L56.3267 66.9931L56.3267 66.9931L56.3267 66.993L56.3267 66.993C56.5949 66.4589 56.9344 65.7826 57.4601 64.7893L59.3114 66.6409C58.6226 67.3799 58.0007 68.0819 57.4403 68.7473L56.112 67.4194C56.1791 67.2871 56.2492 67.1474 56.3251 66.9963L56.3262 66.994ZM66.2176 65.6437C64.9969 65.67 64.0143 65.8572 62.9896 66.8815C58.6676 71.2031 56.7126 74.2321 55.8296 76.0562C57.6194 75.186 60.6123 73.2363 64.9786 68.8704C66 67.849 66.1908 66.8331 66.2176 65.6437ZM64.5713 75.8782L63.121 74.4276C63.7832 73.8651 64.4831 73.2415 65.2214 72.55L67.1921 74.5206C66.2947 74.9997 65.7595 75.2719 65.2547 75.5287L65.2544 75.5288L65.2541 75.529L65.2538 75.5291C65.03 75.6429 64.8122 75.7537 64.5713 75.8782ZM71.1537 78.7452L72.2795 77.6191C73.3295 76.5696 74.0836 75.126 74.4191 73.6392C73.242 74.3778 72.1187 75.0381 71.0845 75.6204C71.2134 76.3872 71.2449 77.3811 71.1537 78.7452ZM69.7525 73.1034L67.2309 70.5817C69.0318 68.6003 69.0298 66.6885 69.0275 64.4798L69.0273 64.2393C69.0273 63.4625 68.3978 62.833 67.621 62.833C67.5042 62.833 67.3877 62.8327 67.2713 62.8323C65.2368 62.8264 63.2698 62.8207 61.2781 64.6296L58.8701 62.2218C65.4455 50.6924 73.046 43.393 81.5856 40.3872C82.2616 42.5746 83.5775 44.6821 85.4475 46.552C87.3087 48.4134 89.4065 49.7259 91.5845 50.4045C88.5609 58.8966 81.2629 66.4918 69.7525 73.1034ZM83.4585 48.5405C80.7165 45.7991 76.255 45.7991 73.5133 48.5405C70.7717 51.2823 70.7717 55.7435 73.5133 58.485C76.255 61.2264 80.7165 61.2268 83.4585 58.485C86.2001 55.7435 86.2001 51.2823 83.4585 48.5405ZM81.4695 56.4961C79.8243 58.1411 77.1471 58.1411 75.5024 56.4961C73.8572 54.8511 73.8572 52.1744 75.5024 50.5294C77.1471 48.8847 79.824 48.8844 81.4695 50.5294C83.1146 52.1744 83.1146 54.8511 81.4695 56.4961Z" fill="white"/><defs><filter id="filter0_d_0_244" x="0" y="0" width="148" height="148" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="16"/><feGaussianBlur stdDeviation="12"/><feColorMatrix type="matrix" values="0 0 0 0 0.303864 0 0 0 0 0.234804 0 0 0 0 0 0 0 0 0.16109 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_244"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_244" result="shape"/></filter></defs></svg>');
+  height: 55px;
+  border-radius: 4px;
+  background: #F07566;
 }
 
-.page7{
+.pg6-2 {
+  width: 16px;
+  height: 69px;
+  border-radius: 4px;
+  background: #FBD34B;
+}
+
+.pg6-3 {
+  width: 16px;
+  height: 55px;
+  border-radius: 4px;
+  background: #4DB282;
+}
+
+.pg6-4 {
+  width: 16px;
+  height: 79px;
+  border-radius: 4px;
+  background: #F07566;
+}
+
+.pg6-custom-img {
+  width: 119px;
+  height: 35px;
+}
+
+.pg6-icon {
+  position: absolute;
+  width: 148px;
+  height: 148px;
+  bottom: 280px;
+  right: 445px;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="148" height="148" viewBox="0 0 148 148" fill="none"><g filter="url(%23filter0_d_0_244)"><path fill-rule="evenodd" clip-rule="evenodd" d="M74 108C46.3858 108 24 85.6142 24 58C24 30.3858 46.3858 8 74 8C101.614 8 124 30.3858 124 58V100C124 104.418 120.418 108 116 108H74Z" fill="%234DB282"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M95.7955 37.4469C95.723 36.7932 95.207 36.2768 94.5529 36.2043C83.4237 34.9684 73.9367 39.42 66.1981 47.3855C63.9835 49.6651 62.0626 52.0781 60.423 54.4068C57.648 54.2941 54.5712 55.5494 52.3899 57.7306L48.4119 61.7084C47.9618 62.1584 47.8702 62.855 48.1885 63.4061C48.5067 63.9573 49.1553 64.2257 49.7706 64.0613C50.6935 63.8133 52.1933 63.5251 53.634 63.4581C54.1607 63.4336 54.5983 63.4413 54.962 63.4691C54.5667 64.2294 54.2129 64.9342 53.9231 65.5116L53.923 65.5117L53.9227 65.5123L53.9227 65.5124L53.9226 65.5125C53.5692 66.2167 53.3109 66.7312 53.1883 66.9258C52.839 67.4817 52.9199 68.205 53.3843 68.6693L55.6861 70.9709C52.3361 75.5394 52.2808 77.8792 52.2925 78.2106C52.3171 78.9126 52.8646 79.5703 53.7714 79.5703C54.5566 79.5703 56.8086 79.2371 60.9082 76.1928L63.3294 78.6138C63.7971 79.0814 64.5277 79.1598 65.0844 78.8024C65.3136 78.655 65.8917 78.3607 66.6663 77.9664C67.1716 77.7092 67.7605 77.4094 68.3908 77.0801C68.4172 78.2699 68.2557 80.0171 67.9052 82.3854C67.7059 83.7286 69.339 84.5372 70.2908 83.5858L74.2689 79.608C76.3202 77.5569 77.5097 74.5104 77.4218 71.6525C79.8752 69.9382 82.4275 67.916 84.8106 65.5792C92.7008 57.8423 97.0158 48.4277 95.7955 37.4469ZM93.1052 38.8941C93.3297 41.9264 93.0901 44.8656 92.3925 47.7099C90.6598 47.1643 88.966 46.0924 87.4362 44.5631C85.9009 43.0276 84.8268 41.3269 84.2833 39.5881C87.1267 38.9007 90.068 38.6678 93.1052 38.8941ZM54.3786 59.7195L53.4506 60.6478C54.4368 60.5991 55.4608 60.6368 56.3819 60.8401C56.9782 59.7792 57.6542 58.6296 58.4127 57.4259C56.9609 57.7892 55.5011 58.5974 54.3786 59.7195ZM56.3262 66.994L56.3267 66.9931L56.3267 66.9931L56.3267 66.993L56.3267 66.993C56.5949 66.4589 56.9344 65.7826 57.4601 64.7893L59.3114 66.6409C58.6226 67.3799 58.0007 68.0819 57.4403 68.7473L56.112 67.4194C56.1791 67.2871 56.2492 67.1474 56.3251 66.9963L56.3262 66.994ZM66.2176 65.6437C64.9969 65.67 64.0143 65.8572 62.9896 66.8815C58.6676 71.2031 56.7126 74.2321 55.8296 76.0562C57.6194 75.186 60.6123 73.2363 64.9786 68.8704C66 67.849 66.1908 66.8331 66.2176 65.6437ZM64.5713 75.8782L63.121 74.4276C63.7832 73.8651 64.4831 73.2415 65.2214 72.55L67.1921 74.5206C66.2947 74.9997 65.7595 75.2719 65.2547 75.5287L65.2544 75.5288L65.2541 75.529L65.2538 75.5291C65.03 75.6429 64.8122 75.7537 64.5713 75.8782ZM71.1537 78.7452L72.2795 77.6191C73.3295 76.5696 74.0836 75.126 74.4191 73.6392C73.242 74.3778 72.1187 75.0381 71.0845 75.6204C71.2134 76.3872 71.2449 77.3811 71.1537 78.7452ZM69.7525 73.1034L67.2309 70.5817C69.0318 68.6003 69.0298 66.6885 69.0275 64.4798L69.0273 64.2393C69.0273 63.4625 68.3978 62.833 67.621 62.833C67.5042 62.833 67.3877 62.8327 67.2713 62.8323C65.2368 62.8264 63.2698 62.8207 61.2781 64.6296L58.8701 62.2218C65.4455 50.6924 73.046 43.393 81.5856 40.3872C82.2616 42.5746 83.5775 44.6821 85.4475 46.552C87.3087 48.4134 89.4065 49.7259 91.5845 50.4045C88.5609 58.8966 81.2629 66.4918 69.7525 73.1034ZM83.4585 48.5405C80.7165 45.7991 76.255 45.7991 73.5133 48.5405C70.7717 51.2823 70.7717 55.7435 73.5133 58.485C76.255 61.2264 80.7165 61.2268 83.4585 58.485C86.2001 55.7435 86.2001 51.2823 83.4585 48.5405ZM81.4695 56.4961C79.8243 58.1411 77.1471 58.1411 75.5024 56.4961C73.8572 54.8511 73.8572 52.1744 75.5024 50.5294C77.1471 48.8847 79.824 48.8844 81.4695 50.5294C83.1146 52.1744 83.1146 54.8511 81.4695 56.4961Z" fill="white"/><defs><filter id="filter0_d_0_244" x="0" y="0" width="148" height="148" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="16"/><feGaussianBlur stdDeviation="12"/><feColorMatrix type="matrix" values="0 0 0 0 0.303864 0 0 0 0 0.234804 0 0 0 0 0 0 0 0 0.16109 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_244"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_244" result="shape"/></filter></defs></svg>');
+}
+
+.page7 {
   margin-top: 158px;
   height: 384px;
   background: #F07566;
   display: flex;
 }
-.page7-vid{
+
+.page7-vid {
   height: 100%;
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.pg7-vid{
+
+.pg7-vid {
   width: 371px;
-height: 508px;
+  height: 508px;
 
 }
-.page7-txts{
+
+.page7-txts {
   height: 100%;
   width: 50%;
   display: flex;
@@ -990,64 +1036,69 @@ height: 508px;
   padding-top: 79px;
   padding-bottom: 79px;
 }
-.pg7-txt1{
+
+.pg7-txt1 {
   color: #FFF;
-font-family: "Hind Siliguri";
-font-size: 56px;
-font-weight: 700;
-line-height: 64px; /* 114.286% */
-letter-spacing: -1px;
-width: 510px;
-}
-.pg7-txt2{
-  width: 570px;
-  color: #FFF;
-font-family: "Work Sans";
-font-size: 20px;
-line-height: 32px; /* 160% */
+  font-family: "Hind Siliguri";
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  width: 510px;
 }
 
-.page8{
+.pg7-txt2 {
+  width: 570px;
+  color: #FFF;
+  font-family: "Work Sans";
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.page8 {
   margin-top: 139px;
 }
-.page8-txts{
+
+.page8-txts {
   display: flex;
   flex-direction: column;
   gap: 28px;
   align-items: center;
 }
-.pg8-txt-1-2{
+
+.pg8-txt-1-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-.page8-txt1{
+
+.page8-txt1 {
   display: flex;
   align-items: center;
   gap: 10px;
   color: #F07566;
-font-family: "Hind Siliguri";
-font-weight: 700;
-line-height: 32px; /* 200% */
-letter-spacing: 1px;
-text-transform: uppercase;
+  font-family: "Hind Siliguri";
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
-.page8-txt2{
+
+.page8-txt2 {
   color: #333;
-text-align: center;
-font-family: "Hind Siliguri";
-font-size: 56px;
-font-weight: 700;
-line-height: 64px; /* 114.286% */
-letter-spacing: -1px;
+  text-align: center;
+  font-family: "Hind Siliguri";
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
 }
-.page8-txt3{
+
+.page8-txt3 {
   color: rgba(51, 51, 51, 0.50);
-text-align: center;
-font-family: "Work Sans";
-line-height: 32px; /* 200% */
-width: 770px;
+  text-align: center;
+  font-family: "Work Sans";
+  line-height: 32px;
+  width: 770px;
 }
 
 
@@ -1059,7 +1110,7 @@ width: 770px;
   background-color: #FFE4E1;
 }
 
-.swper{
+.swper {
   margin-top: 100px;
   height: 512px;
   padding-left: 135px;
@@ -1068,101 +1119,108 @@ width: 770px;
   flex-direction: column;
   align-items: center;
 }
-.swiper-slide1{
+
+.swiper-slide1 {
   display: flex;
   justify-content: center;
   padding-bottom: 80px;
   display: flex;
   gap: 30px;
 }
-.slideBox-1{
+
+.slideBox-1 {
   width: 370px;
   height: 448px;
-display: flex;
-flex-direction: column;
-gap: 25px;
-border-radius: 8px;
-border: 1px solid #E6EDF5;
-background: #FFF;
-padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 8px;
+  border: 1px solid #E6EDF5;
+  background: #FFF;
+  padding: 16px;
 }
-.slideBox-1-img{
+
+.slideBox-1-img {
   width: 338px;
-height: 320px;
-border-radius: 8px 8px 50px 8px;
-background: lightgreen;
+  height: 320px;
+  border-radius: 8px 8px 50px 8px;
+  background: lightgreen;
 }
-.slideBox-2-img{
+
+.slideBox-2-img {
   width: 338px;
-height: 320px;
-border-radius: 8px 8px 50px 8px;
-background: lightcoral;
+  height: 320px;
+  border-radius: 8px 8px 50px 8px;
+  background: lightcoral;
 }
-.slideBox-3-img{
+
+.slideBox-3-img {
   width: 338px;
-height: 320px;
-border-radius: 8px 8px 50px 8px;
-background: lightyellow;
+  height: 320px;
+  border-radius: 8px 8px 50px 8px;
+  background: lightyellow;
 }
-.slideBox-txt{
+
+.slideBox-txt {
   display: flex;
   flex-direction: column;
   text-align: start;
-gap: 2px;
+  gap: 2px;
   padding-left: 16px;
 }
-.slideBox-txt-1{
+
+.slideBox-txt-1 {
   color: #333;
-font-family: "Hind Siliguri";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px; /* 133.333% */
-}
-.slideBox-txt-2{
-  color: rgba(51, 51, 51, 0.50);
-font-family: "Work Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 32px; /* 200% */
-}
-.slideBox-2{
-  width: 370px;
-height: 448px;
-display: flex;
-flex-direction: column;
-gap: 25px;
-border-radius: 8px;
-background: #FFF;
-box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
-padding: 16px;
+  font-family: "Hind Siliguri";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
 }
 
-.page9{
+.slideBox-txt-2 {
+  color: rgba(51, 51, 51, 0.50);
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.slideBox-2 {
+  width: 370px;
+  height: 448px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
+  padding: 16px;
+}
+
+.page9 {
   margin-top: 227px;
 }
 
-
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 2000px){
-body{
-  width: 100vw;
-  height: 100vh;
-}
+@media only screen and (min-width: 2000px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
 
-.page1{
-  display: flex;
-  justify-content: center;
-}
-.page2{
-  display: flex;
-  justify-content: center;
-}
-.page3{
-  display: flex;
-  justify-content: center;
-}
-}
+  .page1 {
+    display: flex;
+    justify-content: center;
+  }
 
+  .page2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .page3 {
+    display: flex;
+    justify-content: center;
+  }
+}
