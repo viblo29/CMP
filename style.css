@@ -103,11 +103,12 @@ nav a {
 
 .page1 {
   position: relative;
-  margin-top: 128px;
+  padding-top: 128px;
   display: flex;
   gap: 152px;
   padding-left: 135px;
   padding-right: 135px;
+  padding-bottom: 150px;
 }
 
 .page1-texts {
@@ -125,7 +126,7 @@ nav a {
 .page1-text-1 {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   padding-top: 59px;
   color: #f07566;
   font-family: "Hind Siliguri", serif;
@@ -295,7 +296,8 @@ nav a {
 }
 
 .page2 {
-  margin-top: 300px;
+  padding-top: 150px;
+  padding-bottom: 42.5px;
   display: flex;
   gap: 84px;
   padding-left: 135px;
@@ -379,7 +381,7 @@ nav a {
 .page2-text-1 {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   color: #f07566;
   font-family: "Hind Siliguri", serif;
   font-size: 16px;
@@ -455,17 +457,22 @@ nav a {
   width: 725px;
   height: 697px;
   left: 0;
-  margin-top: 85px;
   position: absolute;
   background-repeat: no-repeat;
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="513" height="697" viewBox="0 0 513 697" fill="none"><path d="M-212 0.918466C-212 0.918466 384.617 9.87537 471.096 97.6462C557.575 185.417 485.753 340.684 471.096 387.212C456.439 433.739 566.744 610.681 428.423 684.389C365.905 717.702 -212 669.481 -212 669.481V0.918466Z" fill="%23EEF6FF"/></svg>');
 }
 
 .page3 {
+  padding-top: 42.5px;
   position: relative;
-  margin-top: 264px;
   padding-left: 135px;
   padding-right: 135px;
+  align-items: center;
+  height: 816.5px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 77px;
+
 }
 
 .page3-boxes {
@@ -486,6 +493,18 @@ nav a {
   border-radius: 8px;
   border: 1px solid #e6edf5;
   background: #fff;
+}
+.page3-box2 {
+  display: flex;
+  flex-direction: column;
+  gap: 89px;
+  padding: 32px;
+  width: 270px;
+  height: 368px;
+  border-radius: 8px;
+  border: 1px solid #e6edf5;
+  background: #fff;
+  box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
 }
 
 .page3-h1 {
@@ -511,11 +530,12 @@ nav a {
 }
 
 .page4 {
-  margin-top: 672px;
+  padding-top: 77px;
   display: flex;
   gap: 154px;
   padding-left: 135px;
   padding-right: 135px;
+  padding-bottom: 109.5px;
 }
 
 .page4-txts {
@@ -528,7 +548,7 @@ nav a {
 .page4-txt-1 {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   color: #f07566;
   font-family: "Hind Siliguri";
   font-size: 16px;
@@ -663,12 +683,13 @@ nav a {
 }
 
 .page5 {
-  margin-top: 219px;
+  padding-top: 109.5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 135px;
   padding-right: 135px;
+  padding-bottom: 72px;
 }
 
 .page5-txts {
@@ -681,7 +702,7 @@ nav a {
 .page5-txt-1 {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   color: #F07566;
   font-family: "Hind Siliguri";
   font-size: 16px;
@@ -722,7 +743,7 @@ nav a {
 }
 
 .page5-box {
-  margin-top: 61px;
+  padding-top: 61px;
   width: 570px;
   display: flex;
   flex-direction: column;
@@ -830,19 +851,22 @@ nav a {
 }
 
 .logos {
-  margin-top: 144px;
+  padding-top: 72px;
   display: flex;
   justify-content: space-between;
   padding-left: 135px;
   padding-right: 135px;
+  padding-bottom: 105px;
 }
 
 .page6 {
-  margin-top: 210px;
+  padding-top: 105px;
   display: flex;
   gap: 119px;
   padding-left: 135px;
   padding-right: 135px;
+  padding-bottom: 112px;
+
 }
 
 .page6-txts {
@@ -861,7 +885,7 @@ nav a {
 .page6-txt-1 {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   color: #F07566;
   font-family: "Hind Siliguri";
   font-size: 16px;
@@ -1046,10 +1070,17 @@ nav a {
 }
 
 .page7 {
-  margin-top: 224px;
+  padding-top: 112px;
+  display: flex;
+  height: 565.5px;
+  padding-bottom: 69.5px;
+}
+.page7-box{
   height: 384px;
   background: #F07566;
+  width: 100%;
   display: flex;
+
 }
 
 .page7-vid {
@@ -1093,7 +1124,7 @@ nav a {
 }
 
 .page8 {
-  margin-top: 139px;
+  padding-top: 69.5px;
 }
 
 .page8-txts {
@@ -1113,7 +1144,7 @@ nav a {
 .page8-txt1 {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 color: #F07566;
 font-family: "Hind Siliguri";
 font-size: 16px;
@@ -1243,15 +1274,15 @@ text-transform: uppercase;
 }
 
 .page10-email{
-  padding-top: 82px;
+  padding-top: 112px;
   padding-left: 135px;
   padding-right: 135px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* gap: 337px; */
-
 }
+
 .page10-email-text{
   width: 363px;
   height: 48px;
@@ -1293,7 +1324,7 @@ padding-bottom: 7px ;
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1444px) {
   body{
     width: 100vw;
     height: 100vh;
