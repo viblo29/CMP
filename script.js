@@ -28,9 +28,9 @@ button.addEventListener('click',function(event){
     event.preventDefault();
     setTimeout(() => {
         if (visible) {
-            MainBoxes.style.display = "flex"
-        } else {
             MainBoxes.style.display = "none"
+        } else {
+            MainBoxes.style.display = "flex"
             MainBoxes.scrollIntoView({behavior:'smooth',block:'start'})
         }
         visible = !visible
