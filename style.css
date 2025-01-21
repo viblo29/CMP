@@ -1929,6 +1929,14 @@ text-transform: uppercase;
     display: flex;
     justify-content: center;
   }
+  .page9{
+    display: flex;
+    justify-content: center;
+  }
+  .page10{
+    display: flex;
+    justify-content: center;
+  }
   .footer-box{
     display: flex;
     flex-direction: column;
