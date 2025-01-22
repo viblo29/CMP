@@ -322,7 +322,7 @@ nav a {
   padding-bottom: 42.5px;
   display: flex;
   gap: 84px;
-  padding-left: 135px;
+  /* padding-left: 135px; */
   padding-right: 135px;
 }
 
@@ -474,7 +474,18 @@ nav a {
   color: #f07566;
   background: transparent;
 }
-
+@media only screen and (max-width: 1200px) {
+  .page2{
+    gap: 70px;
+    padding-left: 135px;
+  }
+  .page2-pic{
+    width: 500px;
+  }
+  .page2-yellow{
+    width: 452px;
+  }
+}
 .page3-bg {
   width: 725px;
   height: 697px;
@@ -1663,6 +1674,9 @@ padding-bottom: 7px ;
   .container{
     width: 1440px;
   }
+  .page2{
+    padding-left: 135px;
+  }
 }
 
 @media only screen and (max-width: 1439px) {
@@ -1682,7 +1696,7 @@ padding-bottom: 7px ;
   .page2 {
     display: flex;
     justify-content: center;
-    padding-left: 0;
+    /* padding-left: 0; */
     padding-right: 135px;
   }
 
