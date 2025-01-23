@@ -2047,7 +2047,7 @@ text-transform: uppercase;
 
   .page-title {
     gap: 9px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 32px;
     letter-spacing: 1px;
@@ -2176,7 +2176,7 @@ text-transform: uppercase;
 
   .page-title {
     gap: 9px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 32px;
     letter-spacing: 1px;
@@ -2317,5 +2317,141 @@ text-transform: uppercase;
   .page3 {
     display: flex;
     justify-content: center;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .page11 {
+    height: auto;
+  }
+
+  .page-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 1px;
+  }
+
+  .pg11-topBox {
+    width: 329px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #E6EDF5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 60px;
+    gap: 2px;
+  }
+
+  .page11-txt-2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .pg11-topBox-txts {
+    padding-top: 0px;
+    gap: 12px
+  }
+
+  .page11-txt-3 {
+    width: 329px;
+    height: 168px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .pg11-topBox-pic {
+    width: 297px;
+    height: 198px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 4.274px 4.274px 26.715px 4.274px;
+  }
+
+  .pg11-topBox-txt1 {
+    width: 290px;
+    color: #333;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    padding-top: 1px;
+  }
+
+  .pg11-topBox-txt2 {
+    width: 296px;
+    height: 103px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .pg11-other-boxes1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .pg11-other-boxes2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .page11-boxes {
+    gap: 16px;
+  }
+
+  .pg11-box {
+    width: 329px;
+    height: 352px;
+    border-radius: 8px;
+    border: 1px solid #E6EDF5;
+  }
+
+  .pg11-mid-box {
+    width: 329px;
+    height: 352px;
+    border-radius: 8px;
+    box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
+  }
+
+  .pg11-box-pic1 {
+    width: 296px;
+    height: 210px;
+  }
+
+  .pg11-otherBoxes {
+    gap: 16px;
+  }
+
+  .pg11-box-txt {
+    width: 269px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .pg11-box-pic2 {
+    width: 296px;
+    height: 210px;
+  }
+
+  .pg11-box-pic3 {
+    width: 296px;
+    height: 210px;
+  }
+
+  .btn3 {
+    width: 170px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px solid rgba(240, 117, 102, 0.24);
   }
 }
