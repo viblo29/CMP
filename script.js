@@ -36,3 +36,31 @@ button.addEventListener('click',function(event){
         visible = !visible
     }, 500);
 })
+
+
+// Initialize Swiper
+var swiper = new Swiper(".mySwiper2", {
+    navigation: {
+      nextEl: ".pg9-btn-next",
+      prevEl: ".pg9-btn-prev",
+    },
+  });
+
+  // Get the custom buttons
+  const nextButton = document.querySelector(".pg9-btn-next");
+  const prevButton = document.querySelector(".pg9-btn-prev");
+
+  // Update button state on Swiper events
+  swiper.on("reachEnd", function () {
+    nextButton.classList.add("disabled"); // Add disabled styles
+  });
+
+  swiper.on("reachBeginning", function () {
+    prevButton.classList.add("disabled"); // Add disabled styles
+  });
+
+  swiper.on("fromEdge", function () {
+    // Remove the disabled styles when leaving the edge
+    nextButton.classList.remove("disabled");
+    prevButton.classList.remove("disabled");
+  });
