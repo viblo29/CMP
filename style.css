@@ -510,18 +510,12 @@ nav a {
   border: 1px solid #e6edf5;
   background: #fff;
 }
-
-.page3-box2 {
-  display: flex;
-  flex-direction: column;
-  gap: 89px;
-  padding: 32px;
-  width: 270px;
-  height: 368px;
+.page3-box:hover{
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
 }
+
 
 .page3-h1 {
   color: #333;
@@ -558,6 +552,9 @@ nav a {
     gap: 15px;
   }
   .page3-box{
+    width: 230px;
+  }
+  .page3-box2{
     width: 230px;
   }
 
