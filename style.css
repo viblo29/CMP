@@ -1237,21 +1237,30 @@ text-transform: uppercase;
   width: 338px;
   height: 320px;
   border-radius: 8px 8px 50px 8px;
-  background: lightgreen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(./images/alien-business-man-sitting-at-the-desk.png);
+  background-position: center;
+
 }
 
 .slideBox-2-img {
   width: 338px;
   height: 320px;
   border-radius: 8px 8px 50px 8px;
-  background: lightcoral;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(./images/Business-Partner-400x400-1.webp);
+  background-position: center;
 }
 
 .slideBox-3-img {
   width: 338px;
   height: 320px;
   border-radius: 8px 8px 50px 8px;
-  background: lightyellow;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(./images/shota-rustaveli.png);
 }
 
 .slideBox-txt {
@@ -1364,7 +1373,6 @@ text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   line-height: 64px;
-  /* 114.286% */
   letter-spacing: -1px;
 }
 
@@ -1398,7 +1406,6 @@ text-transform: uppercase;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  /* 200% */
 }
 
 .pg9-txt-box-txt2-3 {
@@ -1414,7 +1421,6 @@ text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
-  /* 133.333% */
 }
 
 .pg9-txt-box-txt3 {
@@ -1424,7 +1430,6 @@ text-transform: uppercase;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  /* 171.429% */
 }
 
 .pg9-txtBox-btns {
