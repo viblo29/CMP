@@ -2087,7 +2087,6 @@ text-transform: uppercase;
     border-radius: 6px;
     padding: 16px;
     gap: 60px;
-    margin-left: 20px;
   }
 
   .pg11-topBox-txt1 {
@@ -2104,7 +2103,6 @@ text-transform: uppercase;
 
   .pg11-other-boxes1 {
     gap: 15px;
-    margin-left: 20px;
   }
 
   .pg11-box {
@@ -2158,7 +2156,6 @@ text-transform: uppercase;
 
   .pg11-other-boxes2 {
     gap: 15px;
-    margin-left: 20px;
   }
 }
 
@@ -2216,7 +2213,6 @@ text-transform: uppercase;
     border-radius: 6px;
     padding: 16px;
     gap: 60px;
-    margin-left: 20px;
   }
 
   .pg11-topBox-txt1 {
@@ -2233,7 +2229,6 @@ text-transform: uppercase;
 
   .pg11-other-boxes1 {
     gap: 15px;
-    margin-left: 20px;
   }
 
   .pg11-box {
@@ -2287,7 +2282,6 @@ text-transform: uppercase;
 
   .pg11-other-boxes2 {
     gap: 15px;
-    margin-left: 20px;
   }
 }
 
@@ -2321,7 +2315,7 @@ text-transform: uppercase;
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 915px) {
   .page11 {
     height: auto;
   }
@@ -2341,7 +2335,6 @@ text-transform: uppercase;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-top: 60px;
     gap: 2px;
   }
 
@@ -2364,6 +2357,7 @@ text-transform: uppercase;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
+    margin-bottom: 70px;
   }
 
   .pg11-topBox-pic {
