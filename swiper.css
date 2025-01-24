@@ -9,7 +9,7 @@ html,
       padding: 0;
     }
 
-    /* First Swiper Styles */
+
     .swiper.mySwiper1 {
       padding-top: 61px;
       width: 80%;
@@ -33,12 +33,9 @@ html,
       object-fit: cover;
     }
 
-    /* Second Swiper Styles */
+
     .swiper.mySwiper2 {
       position: relative;
-      padding-top: 27px;
-      padding-left: 32px;
-      padding-right: 32px;
       width: 470px;
       height: 224px;
       border-radius: 8px;
@@ -48,9 +45,7 @@ html,
       flex-direction: column;
       gap: 14px;
     }
-    /* .swiper.mySwiper1 .swiper-wrapper{
-    } */
-
+  
     .swiper.mySwiper2 .swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -59,7 +54,7 @@ html,
       justify-content: center;
       align-items: center;
     }
-
+  
     .swiper.mySwiper2 .swiper-slide img {
       display: block;
       width: 100%;
