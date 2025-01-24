@@ -655,18 +655,18 @@ nav a {
 }
 
 .pg4-yellow {
-  width: 173px;
-  height: 439px;
+  width: 31.684981684981683%;
+  height: 78.39285714285714%;
   border-radius: 12px;
   background: #fbd34b;
   position: absolute;
-  right: 15px;
-  bottom: 32px;
+  right: 2.7472527472527473%;
+  bottom: 5.714285714285714%;
 }
 
 .pg4-red {
-  width: 216px;
-  height: 128px;
+  width: 39.56043956043956%;
+  height: 22.857142857142858%;
   border-radius: 8px;
   background: #F07566;
   position: absolute;
@@ -675,40 +675,44 @@ nav a {
 }
 
 .pg4-pic {
-  width: 462px;
-  height: 480px;
+  width: 84.61538461538461%;
+  height: 85.71428571428571%;
   border-radius: 100px 8px 8px 8px;
   background: #D8D8D8;
   position: absolute;
-  bottom: 48px;
-  right: 30px;
+  bottom: 8.571428571428571%;
+  right: 5.4945054945054945%;
   background-image: url(./images/business1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .pg4-custom {
-  width: 216px;
-  height: 128px;
+  width: 39.56043956043956%;
+  height: 22.857142857142858%;
   border-radius: 8px;
   background: #FFF;
   box-shadow: 0px 24px 48px 0px rgba(86, 66, 0, 0.08);
   position: absolute;
   bottom: 0;
-  right: 153px;
+  right: 28.021978021978022%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.pg4-img{
+  width: 87.96296296296296%;
+  height: 78.125%;
+}
 
 .pg4-icon {
   position: absolute;
-  bottom: 300px;
-  right: 420px;
-  width: 148px;
-  height: 148px;
+  bottom: 53.57142857142857%;
+  right: 76.92307692307693%;
+  width: 27.106227106227106%;
+  height: 26.42857142857143%;
   background-repeat: no-repeat;
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="148" height="148" viewBox="0 0 148 148" fill="none"><g filter="url(%23filter0_d_0_150)"><path fill-rule="evenodd" clip-rule="evenodd" d="M74 108C46.3858 108 24 85.6142 24 58C24 30.3858 46.3858 8 74 8C101.614 8 124 30.3858 124 58V100C124 104.418 120.418 108 116 108H74Z" fill="%234DB282"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M83 40H89C90.653 40 92 41.347 92 43V79C92 80.653 90.653 82 89 82H59C57.347 82 56 80.653 56 79V43C56 41.347 57.347 40 59 40H65V38.5C65 37.672 65.672 37 66.5 37H69.755C70.376 35.254 72.044 34 74 34C75.956 34 77.624 35.254 78.245 37H81.5C82.328 37 83 37.672 83 38.5V40ZM71 40H68V43H80V40H77C76.172 40 75.5 39.328 75.5 38.5C75.5 37.672 74.828 37 74 37C73.172 37 72.5 37.672 72.5 38.5C72.5 39.328 71.828 40 71 40ZM59 79V43H65V44.5C65 45.328 65.672 46 66.5 46H81.5C82.328 46 83 45.328 83 44.5V43H89V79H59ZM73.562 52.441C72.977 51.856 72.026 51.853 71.438 52.438L66.5 57.379L64.562 55.438C63.977 54.853 63.026 54.853 62.441 55.438C61.856 56.023 61.856 56.974 62.441 57.559L65.441 60.559C65.732 60.853 66.116 61 66.5 61C66.884 61 67.268 60.853 67.562 60.562L73.562 54.562C74.147 53.977 74.147 53.026 73.562 52.441ZM73.562 64.441C72.977 63.856 72.026 63.853 71.438 64.438L66.5 69.379L64.562 67.441C63.977 66.856 63.026 66.856 62.441 67.441C61.856 68.026 61.856 68.977 62.441 69.562L65.441 72.562C65.732 72.853 66.116 73 66.5 73C66.884 73 67.268 72.853 67.562 72.562L73.562 66.562C74.147 65.977 74.147 65.026 73.562 64.441ZM77 56.5C77 55.672 77.672 55 78.5 55H84.5C85.328 55 86 55.672 86 56.5C86 57.328 85.328 58 84.5 58H78.5C77.672 58 77 57.328 77 56.5ZM86 68.5C86 67.672 85.328 67 84.5 67H78.5C77.672 67 77 67.672 77 68.5C77 69.328 77.672 70 78.5 70H84.5C85.328 70 86 69.328 86 68.5Z" fill="white"/><defs><filter id="filter0_d_0_150" x="0" y="0" width="148" height="148" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="16"/><feGaussianBlur stdDeviation="12"/><feColorMatrix type="matrix" values="0 0 0 0 0.303864 0 0 0 0 0.234804 0 0 0 0 0 0 0 0 0.16109 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_150"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_150" result="shape"/></filter></defs></svg>');
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 148 148" fill="none"><g filter="url(%23filter0_d_0_150)"><path fill-rule="evenodd" clip-rule="evenodd" d="M74 108C46.3858 108 24 85.6142 24 58C24 30.3858 46.3858 8 74 8C101.614 8 124 30.3858 124 58V100C124 104.418 120.418 108 116 108H74Z" fill="%234DB282"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M83 40H89C90.653 40 92 41.347 92 43V79C92 80.653 90.653 82 89 82H59C57.347 82 56 80.653 56 79V43C56 41.347 57.347 40 59 40H65V38.5C65 37.672 65.672 37 66.5 37H69.755C70.376 35.254 72.044 34 74 34C75.956 34 77.624 35.254 78.245 37H81.5C82.328 37 83 37.672 83 38.5V40ZM71 40H68V43H80V40H77C76.172 40 75.5 39.328 75.5 38.5C75.5 37.672 74.828 37 74 37C73.172 37 72.5 37.672 72.5 38.5C72.5 39.328 71.828 40 71 40ZM59 79V43H65V44.5C65 45.328 65.672 46 66.5 46H81.5C82.328 46 83 45.328 83 44.5V43H89V79H59ZM73.562 52.441C72.977 51.856 72.026 51.853 71.438 52.438L66.5 57.379L64.562 55.438C63.977 54.853 63.026 54.853 62.441 55.438C61.856 56.023 61.856 56.974 62.441 57.559L65.441 60.559C65.732 60.853 66.116 61 66.5 61C66.884 61 67.268 60.853 67.562 60.562L73.562 54.562C74.147 53.977 74.147 53.026 73.562 52.441ZM73.562 64.441C72.977 63.856 72.026 63.853 71.438 64.438L66.5 69.379L64.562 67.441C63.977 66.856 63.026 66.856 62.441 67.441C61.856 68.026 61.856 68.977 62.441 69.562L65.441 72.562C65.732 72.853 66.116 73 66.5 73C66.884 73 67.268 72.853 67.562 72.562L73.562 66.562C74.147 65.977 74.147 65.026 73.562 64.441ZM77 56.5C77 55.672 77.672 55 78.5 55H84.5C85.328 55 86 55.672 86 56.5C86 57.328 85.328 58 84.5 58H78.5C77.672 58 77 57.328 77 56.5ZM86 68.5C86 67.672 85.328 67 84.5 67H78.5C77.672 67 77 67.672 77 68.5C77 69.328 77.672 70 78.5 70H84.5C85.328 70 86 69.328 86 68.5Z" fill="white"/><defs><filter id="filter0_d_0_150" x="0" y="0" width="148" height="148" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="16"/><feGaussianBlur stdDeviation="12"/><feColorMatrix type="matrix" values="0 0 0 0 0.303864 0 0 0 0 0.234804 0 0 0 0 0 0 0 0 0.16109 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_150"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_150" result="shape"/></filter></defs></svg>');
 }
 
 .page5 {
