@@ -7,22 +7,10 @@
   box-sizing: border-box;
 }
 
-/* font-family: "Hind Siliguri", serif; */
-/* font-family: "Work Sans", serif; */
-
-
 .container {
-  /* background-image: url(./Rectangle\ \(1\).png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: auto 931px; */
-
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
-
-  /* padding-left: 135px;
-  padding-right: 135px; */
   position: relative;
   scroll-behavior: smooth;
 }
@@ -2057,6 +2045,12 @@ text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1200px) {
+  
+  .header{
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  
   .img1{
     width: 448px;
     height: 430px;
