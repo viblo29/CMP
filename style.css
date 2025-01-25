@@ -565,19 +565,6 @@ nav a {
   gap: 21px;
 }
 
-/* .page4-txt-1 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #f07566;
-  font-family: "Hind Siliguri";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-} */
-
 .page4-txt-2-3 {
   display: flex;
   flex-direction: column;
@@ -909,19 +896,6 @@ nav a {
   flex-direction: column;
   gap: 20px;
 }
-
-/* .page6-txt-1 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #F07566;
-  font-family: "Hind Siliguri";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-} */
 
 .page6-txt-2 {
   width: 500px;
@@ -2083,9 +2057,25 @@ text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1200px) {
-
-  body {
-    justify-content: center;
+  .img1{
+    width: 448px;
+    height: 430px;
+  }
+  .img2{
+    width: 496px;
+    height: 404px;
+  }
+  .img4{
+    width: 446px;
+    height: 460px;
+  }
+  .page6-img{
+    width: 470px;
+    height: 412px;
+  }
+  .page9-img{
+    width: 470px;
+    height: 377px;
   }
 
   .page11 {
