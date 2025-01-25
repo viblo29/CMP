@@ -23,7 +23,6 @@
 
   /* padding-left: 135px;
   padding-right: 135px; */
-  padding-top: 16px;
   position: relative;
   scroll-behavior: smooth;
 }
@@ -44,6 +43,7 @@
 
 .bg-img {
   position: absolute;
+  z-index: 0;
   top: 0;
   right: 0;
   width: 569px;
@@ -53,7 +53,10 @@
 }
 
 .header {
-  position: relative;
+  width: 100%;
+  padding-top: 16px;
+  position: absolute;
+  z-index: 2;
   padding-left: 135px;
   padding-right: 135px;
   display: flex;
@@ -117,7 +120,7 @@ nav a {
 
 .page1 {
   position: relative;
-  padding-top: 128px;
+  padding-top: 192px;
   display: flex;
   gap: 152px;
   padding-left: 135px;
@@ -126,6 +129,7 @@ nav a {
 }
 
 .page1-texts {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -1213,7 +1217,6 @@ text-transform: uppercase;
   font-size: 16px;
   font-family: "Work Sans";
   line-height: 32px;
-  width: 770px;
 }
 
 
@@ -2054,6 +2057,22 @@ text-transform: uppercase;
     padding-right: 0;
   }
 
+  .slideBox-1{
+    width: 329px;
+  }
+  .slideBox-2{
+    width: 329px;
+  }
+  .slideBox-1-img{
+    width: 297px;
+  }
+  .slideBox-2-img{
+    width: 297px;
+  }
+  .slideBox-3-img{
+    width: 297px;
+  }
+
   .page9 {
     display: flex;
     justify-content: space-evenly;
@@ -2332,6 +2351,37 @@ text-transform: uppercase;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .page8-txt3{
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .page8-txt2{
+    color: #333;
+text-align: center;
+font-family: "Hind Siliguri";
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 120% */
+letter-spacing: -1px;
+  }
+  .page8-txt3{
+    width: 329px;
+
+    color: rgba(51, 51, 51, 0.50);
+text-align: center;
+font-family: "Work Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 200% */
+  }
+  
+}
+
 
 @media only screen and (min-width: 2000px) {
   body {
@@ -2342,6 +2392,12 @@ text-transform: uppercase;
   }
 
   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header{
     width: 1440px;
   }
 
@@ -2358,6 +2414,23 @@ text-transform: uppercase;
   .page3 {
     display: flex;
     justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 181.5px;
+  }
+  .page3-boxes{
+    position: relative;
+  }
+  .page4{
+    padding-top: 181.5px;
+  }
+  .logos{
+    width: 1440px;
+  }
+  .page7{
+    width: 1440px;
+  }
+  .page8{
+    width: 1440px;
   }
 }
 

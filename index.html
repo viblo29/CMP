@@ -14,7 +14,6 @@
 
     <div class="container">
 
-        <div class="bg-img"></div>
 
         <div class="header">
             <div class="header-left">
@@ -30,6 +29,8 @@
             <button class="header-btn">Contact</button>
         </div>
         <div class="page1">
+            <div class="bg-img"></div>
+
             <div class="page1-texts">
                 <div class="page1-text-1-2">
                     <div class="page-title">
@@ -773,7 +774,10 @@
         slidesPerView: 1,
         spaceBetween: 30,
         breakpoints: {
-            768:{
+            850:{
+                slidesPerView: 2,
+            },
+            1260:{
                 slidesPerView: 3,
             },
         },
