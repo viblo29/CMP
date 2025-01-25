@@ -2460,6 +2460,10 @@ text-transform: uppercase;
 
 
 @media only screen and (max-width: 915px) {
+  
+}
+
+@media only screen and (max-width: 965px){
   .page11 {
     height: auto;
   }
@@ -2650,5 +2654,4 @@ text-transform: uppercase;
     width: 95%;
   }
 
-  .copyright {}
 }
