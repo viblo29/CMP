@@ -2007,6 +2007,9 @@ text-transform: uppercase;
     padding-left: 0;
     padding-right: 0;
   }
+  .page1-texts{
+    padding-top: 0;
+  }
 
   .page2 {
     display: flex;
