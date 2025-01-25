@@ -475,8 +475,8 @@ nav a {
 .page3-bg {
   width: 725px;
   height: 697px;
-  left: 0;
-  position: absolute;
+  right: 300px;
+  position: relative;
   background-repeat: no-repeat;
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="513" height="697" viewBox="0 0 513 697" fill="none"><path d="M-212 0.918466C-212 0.918466 384.617 9.87537 471.096 97.6462C557.575 185.417 485.753 340.684 471.096 387.212C456.439 433.739 566.744 610.681 428.423 684.389C365.905 717.702 -212 669.481 -212 669.481V0.918466Z" fill="%23EEF6FF"/></svg>');
 }
@@ -1609,7 +1609,6 @@ text-transform: uppercase;
   padding-bottom: 85.5px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .page10-email-text {
@@ -1998,7 +1997,10 @@ text-transform: uppercase;
     display: flex;
     justify-content: center;
   }
-
+  .page10-email{
+    justify-content: center;
+    gap: 337px;
+  }
   .footer-box {
     display: flex;
     flex-direction: column;
@@ -2012,7 +2014,7 @@ text-transform: uppercase;
   }
 }
 
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1474px) {
   body {
     width: 100vw;
     height: 100vh;
@@ -2100,6 +2102,9 @@ text-transform: uppercase;
     align-items: center;
     padding-left: 135px;
     padding-right: 135px;
+  }
+  .page10-email{
+    justify-content: space-between;
   }
 }
 
@@ -2591,7 +2596,7 @@ line-height: 32px; /* 200% */
     height: 349px;
     position: absolute;
     top: -55px;
-    right: 53px;
+    left: 53px;
   }
   .page3-boxes{
     display: flex;
