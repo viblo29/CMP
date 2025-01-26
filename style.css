@@ -2500,12 +2500,11 @@ text-transform: uppercase;
 
   .page11-txt-3 {
     width: 329px;
-    height: 168px;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
   }
 
   .pg11-topBox-pic {
