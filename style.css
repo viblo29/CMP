@@ -11,8 +11,10 @@
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
+
   position: relative;
   scroll-behavior: smooth;
+  background: #FFF;
 }
 
 .page-title {
@@ -1346,7 +1348,7 @@ text-transform: uppercase;
   padding-top: 34px;
   display: flex;
   flex-direction: column;
-  gap: 17px;
+
 }
 
 .page9-txt-1-2 {
@@ -1453,7 +1455,7 @@ text-transform: uppercase;
 }
 
 .pg9-btn-next.disabled {
-  cursor: not-allowed;
+  pointer-events: none;
   background: gray;
   background-position: center;
   background-repeat: no-repeat;
@@ -1462,7 +1464,7 @@ text-transform: uppercase;
 }
 
 .pg9-btn-prev.disabled {
-  cursor: not-allowed;
+  pointer-events: none;
   background: gray;
   background-position: center;
   background-repeat: no-repeat;
