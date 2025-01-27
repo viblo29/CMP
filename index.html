@@ -784,47 +784,69 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      var swiper1 = new Swiper(".mySwiper1", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        breakpoints: {
-            850:{
-                slidesPerView: 2,
+        var swiper1 = new Swiper(".mySwiper1", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          breakpoints: {
+            850: {
+              slidesPerView: 2,
             },
-            1260:{
-                slidesPerView: 3,
+            1260: {
+              slidesPerView: 3,
             },
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-      var swiper2 = new Swiper(".mySwiper2", {
-        navigation: {
-          nextEl: ".pg9-btn-next",
-          prevEl: ".pg9-btn-prev",
-        },
-      });
-var swiper = new Swiper(".mySwiper2", {
-  navigation: {
-    nextEl: ".pg9-btn-next",
-    prevEl: ".pg9-btn-prev",
-  },
-});
-const nextButton = document.querySelector(".pg9-btn-next");
-const prevButton = document.querySelector(".pg9-btn-prev");
-swiper.on("reachEnd", function () {
-  nextButton.classList.add("disabled");
-});
-swiper.on("reachBeginning", function () {
-  prevButton.classList.add("disabled");
-});
-swiper.on("fromEdge", function () {
-  nextButton.classList.remove("disabled");
-  prevButton.classList.remove("disabled");
-});
-    </script>
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      
+        var swiper2 = new Swiper(".mySwiper2", {
+          navigation: {
+            nextEl: ".pg9-btn-next",
+            prevEl: ".pg9-btn-prev",
+          },
+          on: {
+            init: function () {
+              if (this.isBeginning) {
+                document.querySelector(".pg9-btn-prev").classList.add("disabled");
+              }
+            },
+            slideChange: function () {
+              const nextButton = document.querySelector(".pg9-btn-next");
+              const prevButton = document.querySelector(".pg9-btn-prev");
+      
+              if (this.isBeginning) {
+                prevButton.classList.add("disabled");
+              } else {
+                prevButton.classList.remove("disabled");
+              }
+      
+              if (this.isEnd) {
+                nextButton.classList.add("disabled");
+              } else {
+                nextButton.classList.remove("disabled");
+              }
+            },
+          },
+        });
+      
+        const nextButton = document.querySelector(".pg9-btn-next");
+        const prevButton = document.querySelector(".pg9-btn-prev");
+      
+        swiper2.on("reachEnd", function () {
+          nextButton.classList.add("disabled");
+        });
+      
+        swiper2.on("reachBeginning", function () {
+          prevButton.classList.add("disabled");
+        });
+      
+        swiper2.on("fromEdge", function () {
+          nextButton.classList.remove("disabled");
+          prevButton.classList.remove("disabled");
+        });
+      </script>
     <script src="./script.js"></script>
 </body>
 
