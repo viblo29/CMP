@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Demo styles -->
     <link rel="stylesheet" href="./swiper.css">
 </head>
@@ -15,7 +14,6 @@
 
     <div class="container">
 
-        <div class="bg-img"></div>
 
         <div class="header">
             <div class="header-left">
@@ -31,6 +29,8 @@
             <button class="header-btn">Contact</button>
         </div>
         <div class="page1">
+            <div class="bg-img"></div>
+
             <div class="page1-texts">
                 <div class="page1-text-1-2">
                     <div class="page-title">
@@ -40,7 +40,6 @@
                                 fill="#F07566" />
                         </svg>
                         <div>Company</div>
-                        <!-- <ul><li>Company</li></ul> -->
                     </div>
                     <div class="page1-text-2">
                         <div> <span style="color: #333;">Creative</span> Marketing</div>
@@ -58,14 +57,16 @@
                     <div class="page1-yellow"></div>
                     <div class="page1-icon"></div>
                     <div class="page1-custom">
-                        <div class="bl-img"><img src="./images/Bitmap (1).png" alt=""></div>
-                        <div class="bl">
-                            <div class="b1"></div>
-                            <div class="b2"></div>
-                            <div class="b3"></div>
-                            <div class="b4"></div>
-                            <div class="b5"></div>
-                            <div class="b6"></div>
+                        <div class="pg1-custom-box">
+                            <img class="bl-img" src="./images/Bitmap (1).png" alt="">
+                            <div class="bl">
+                                <div class="b1"></div>
+                                <div class="b2"></div>
+                                <div class="b3"></div>
+                                <div class="b4"></div>
+                                <div class="b5"></div>
+                                <div class="b6"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,7 +80,7 @@
                     <div class="page2-red"></div>
                     <div class="page2-pic"></div>
                     <div class="page2-custom">
-                        <img width="100" height="100" src="./images/page2-custom.png" alt="">
+                        <img class="pg2-img" src="./images/page2-custom.png" alt="">
                     </div>
                     <div class="page2-icon"></div>
                 </div>
@@ -233,7 +234,7 @@
                     <div class="pg4-red"></div>
                     <div class="pg4-pic"></div>
                     <div class="pg4-custom">
-                        <img width="190" height="100" src="./images/page4-custom.png" alt="">
+                        <img class="pg4-img" src="./images/page4-custom.png" alt="">
                     </div>
                     <div class="pg4-icon"></div>
                 </div>
@@ -319,7 +320,20 @@
             <div><img src="./images/5.png" alt=""></div>
             <div><img src="./images/6.png" alt=""></div>
         </div>
-
+        <div class="logos2">
+            <div class="two-logos">
+                <div><img src="./images/1.png" alt=""></div>
+                <div><img src="./images/2.png" alt=""></div>
+            </div>
+            <div class="two-logos">
+                <div><img src="./images/3.png" alt=""></div>
+                <div><img src="./images/4.png" alt=""></div>
+            </div>
+            <div class="two-logos">
+                <div><img src="./images/5.png" alt=""></div>
+                <div><img src="./images/6.png" alt=""></div>
+            </div>
+        </div>
         <div class="page6" id="page6">
             <div class="page6-txts">
                 <div class="page6-txt-1-2">
@@ -401,7 +415,8 @@
                 </div>
                 <div class="page7-txts">
                     <div class="pg7-txt1">Strategy, technology and design</div>
-                    <div class="pg7-txt2">Apparently we had reached a great height in the atmosphere, for the sky was a dead
+                    <div class="pg7-txt2">Apparently we had reached a great height in the atmosphere, for the sky was a
+                        dead
                         black.</div>
                 </div>
             </div>
@@ -423,131 +438,179 @@
                 <div class="page8-txt3">Formed a great hindrance to my speed, I resolved, contrary to my first
                     intention, to make the being of a gigantic stature that is to say, about eight feet in height.</div>
             </div>
-            
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slideBox-1">
-                        <div class="slideBox-1-img"><img src="./images/general-manger.webp" alt=""></div>
-                        <div class="slideBox-txt">
-                            <div class="slideBox-txt-1">Ingo Schimpff</div>
-                            <div class="slideBox-txt-2">Manager</div>
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slideBox-1">
+                                <div class="slideBox-1-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Ingo Schimpff</div>
+                                    <div class="slideBox-txt-2">Manager</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slideBox-2">
-                        <div class="slideBox-2-img"><img src="./images/istockphoto-1371934584-612x612.jpg" alt=""></div>
-                        <div class="slideBox-txt">
-                            <div class="slideBox-txt-1">Gauthier Drewitt</div>
-                            <div class="slideBox-txt-2">Director</div>
+                        <div class="swiper-slide">
+                            <div class="slideBox-2">
+                                <div class="slideBox-2-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Gauthier Drewitt</div>
+                                    <div class="slideBox-txt-2">Director</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slideBox-1">
-                        <div class="slideBox-3-img"><img src="./images/chi-e-cosa-fa-il-medical-manager_1726846107_23.webp" alt=""></div>
-                        <div class="slideBox-txt">
-                            <div class="slideBox-txt-1">Winny Rearie</div>
-                            <div class="slideBox-txt-2">Manager</div>
+                        <div class="swiper-slide">
+                            <div class="slideBox-1">
+                                <div class="slideBox-3-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Winny Rearie</div>
+                                    <div class="slideBox-txt-2">Manager</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
 
-                <div class="swiper-slide">
-                    <div class="slideBox-1">
-                        <div class="slideBox-1-img"><img src="./images/general-manger.webp" alt=""></div>
-                        <div class="slideBox-txt">
-                            <div class="slideBox-txt-1">Ingo Schimpff</div>
-                            <div class="slideBox-txt-2">Manager</div>
+                        <div class="swiper-slide">
+                            <div class="slideBox-1">
+                                <div class="slideBox-1-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Ingo Schimpff</div>
+                                    <div class="slideBox-txt-2">Manager</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slideBox-2">
-                        <div class="slideBox-2-img"><img src="./images/istockphoto-1371934584-612x612.jpg" alt=""></div>
-                        <div class="slideBox-txt">
-                            <div class="slideBox-txt-1">Gauthier Drewitt</div>
-                            <div class="slideBox-txt-2">Director</div>
+                        <div class="swiper-slide">
+                            <div class="slideBox-2">
+                                <div class="slideBox-2-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Gauthier Drewitt</div>
+                                    <div class="slideBox-txt-2">Director</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slideBox-1">
-                        <div class="slideBox-3-img"><img src="./images/chi-e-cosa-fa-il-medical-manager_1726846107_23.webp" alt=""></div>
-                        <div class="slideBox-txt">
-                            <div class="slideBox-txt-1">Winny Rearie</div>
-                            <div class="slideBox-txt-2">Manager</div>
+                        <div class="swiper-slide">
+                            <div class="slideBox-1">
+                                <div class="slideBox-3-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Winny Rearie</div>
+                                    <div class="slideBox-txt-2">Manager</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="swiper-slide">
-                    <div class="slideBox-1">
-                        <div class="slideBox-1-img"><img src="./images/general-manger.webp" alt=""></div>
-                        <div class="slideBox-txt">
-                            <div class="slideBox-txt-1">Ingo Schimpff</div>
-                            <div class="slideBox-txt-2">Manager</div>
+                        <div class="swiper-slide">
+                            <div class="slideBox-1">
+                                <div class="slideBox-1-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Ingo Schimpff</div>
+                                    <div class="slideBox-txt-2">Manager</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slideBox-2">
-                        <div class="slideBox-2-img"><img src="./images/istockphoto-1371934584-612x612.jpg" alt=""></div>
-                        <div class="slideBox-txt">
-                            <div class="slideBox-txt-1">Gauthier Drewitt</div>
-                            <div class="slideBox-txt-2">Director</div>
+                        <div class="swiper-slide">
+                            <div class="slideBox-2">
+                                <div class="slideBox-2-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Gauthier Drewitt</div>
+                                    <div class="slideBox-txt-2">Director</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slideBox-1">
-                        <div class="slideBox-3-img"><img src="./images/chi-e-cosa-fa-il-medical-manager_1726846107_23.webp" alt=""></div>
-                        <div class="slideBox-txt">
-                            <div class="slideBox-txt-1">Winny Rearie</div>
-                            <div class="slideBox-txt-2">Manager</div>
+                        <div class="swiper-slide">
+                            <div class="slideBox-1">
+                                <div class="slideBox-3-img"></div>
+                                <div class="slideBox-txt">
+                                    <div class="slideBox-txt-1">Winny Rearie</div>
+                                    <div class="slideBox-txt-2">Manager</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
         </div>
-      
+
         <div class="page9">
             <div class="page9-img">
                 <div class="page9-yellow"></div>
                 <div class="page9-red"></div>
-                <div class="page9-pic"> <img  class="page9-pic" src="./images/wallpapersden.com_ocean-sea-sky_2048x1365.jpg" alt=""></div>
+                <div class="page9-pic"></div>
                 <div class="page9-icon"></div>
             </div>
             <div class="page9-txts">
                 <div class="page9-txt-1-2">
                     <div class="page-title">
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                            <path d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z" fill="#F07566"/>
-                          </svg>
-                          <div>Testimonials</div>
+                            <path
+                                d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z"
+                                fill="#F07566" />
+                        </svg>
+                        <div>Testimonials</div>
                     </div>
                     <div class="page9-txt-2">Reviews</div>
                 </div>
 
                 <div class="pg9-txtBox-btns">
-                    <div class="page9-txt-box">
-                        <div class="pg9-txt-box-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="36" viewBox="0 0 48 36" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 0C7.784 2.412 0 13.168 0 23.45C0 31.39 5.572 36 11.602 36C16.832 36 22 32.406 22 26.042C22 20.838 18.19 16.528 13.208 15.744C13.642 11.736 17.538 5.922 21.968 4.252L20 0ZM46 0C33.784 2.412 26 13.168 26 23.45C26 31.39 31.572 36 37.602 36C42.832 36 48 32.406 48 26.042C48 20.838 44.19 16.528 39.208 15.744C39.642 11.736 43.538 5.922 47.968 4.252L46 0Z" fill="#4DB282"/>
-                              </svg>
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="page9-txt-box">
+                                <div class="pg9-txt-box-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="36" viewBox="0 0 48 36"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20 0C7.784 2.412 0 13.168 0 23.45C0 31.39 5.572 36 11.602 36C16.832 36 22 32.406 22 26.042C22 20.838 18.19 16.528 13.208 15.744C13.642 11.736 17.538 5.922 21.968 4.252L20 0ZM46 0C33.784 2.412 26 13.168 26 23.45C26 31.39 31.572 36 37.602 36C42.832 36 48 32.406 48 26.042C48 20.838 44.19 16.528 39.208 15.744C39.642 11.736 43.538 5.922 47.968 4.252L46 0Z"
+                                            fill="#4DB282" />
+                                    </svg>
+                                </div>
+                                <div class="pg9-txt-box-txt1">"The sky was cloudless and of a deep dark blue the spectacle
+                                    before us was indeed sublime sky was cloudless and of a deep dark."</div>
+                                <div class="pg9-txt-box-txt2-3">
+                                    <div class="pg9-txt-box-txt2">Jaroslav Brabec</div>
+                                    <div class="pg9-txt-box-txt3">Microsoft</div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="page9-txt-box">
+                                <div class="pg9-txt-box-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="36" viewBox="0 0 48 36"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20 0C7.784 2.412 0 13.168 0 23.45C0 31.39 5.572 36 11.602 36C16.832 36 22 32.406 22 26.042C22 20.838 18.19 16.528 13.208 15.744C13.642 11.736 17.538 5.922 21.968 4.252L20 0ZM46 0C33.784 2.412 26 13.168 26 23.45C26 31.39 31.572 36 37.602 36C42.832 36 48 32.406 48 26.042C48 20.838 44.19 16.528 39.208 15.744C39.642 11.736 43.538 5.922 47.968 4.252L46 0Z"
+                                            fill="#4DB282" />
+                                    </svg>
+                                </div>
+                                <div class="pg9-txt-box-txt1">"The sky was cloudless and of a deep dark blue the spectacle
+                                    before us was indeed sublime sky was cloudless and of a deep dark."</div>
+                                <div class="pg9-txt-box-txt2-3">
+                                    <div class="pg9-txt-box-txt2">Jaroslav Brabec</div>
+                                    <div class="pg9-txt-box-txt3">Microsoft</div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="page9-txt-box">
+                                <div class="pg9-txt-box-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="36" viewBox="0 0 48 36"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20 0C7.784 2.412 0 13.168 0 23.45C0 31.39 5.572 36 11.602 36C16.832 36 22 32.406 22 26.042C22 20.838 18.19 16.528 13.208 15.744C13.642 11.736 17.538 5.922 21.968 4.252L20 0ZM46 0C33.784 2.412 26 13.168 26 23.45C26 31.39 31.572 36 37.602 36C42.832 36 48 32.406 48 26.042C48 20.838 44.19 16.528 39.208 15.744C39.642 11.736 43.538 5.922 47.968 4.252L46 0Z"
+                                            fill="#4DB282" />
+                                    </svg>
+                                </div>
+                                <div class="pg9-txt-box-txt1">"The sky was cloudless and of a deep dark blue the spectacle
+                                    before us was indeed sublime sky was cloudless and of a deep dark."</div>
+                                <div class="pg9-txt-box-txt2-3">
+                                    <div class="pg9-txt-box-txt2">Jaroslav Brabec</div>
+                                    <div class="pg9-txt-box-txt3">Microsoft</div>
+                                </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="pg9-txt-box-txt1">"The sky was cloudless and of a deep dark blue the spectacle before us was indeed sublime sky was cloudless and of a deep dark."</div>
-                        <div class="pg9-txt-box-txt2-3">
-                            <div class="pg9-txt-box-txt2">Jaroslav Brabec</div>
-                            <div class="pg9-txt-box-txt3">Microsoft</div>
-                        </div>
-                    </div>
+                      </div>
                     <div class="page9-txt-box-btns">
                         <div class="pg9-btn-prev"></div>
                         <div class="pg9-btn-next"></div>
@@ -563,40 +626,226 @@
                     <button class="pg10-btn">Contact Us</button>
                 </div>
                 <div class="page10-txt-2">
-                    <div class="pg10-txt2">I shall see the face of Mars, anyhow, and that will be a rare experience. It seems to me that a view of the heavenly bodies through a fine telescope, as well as a tour round the world, should form a part of a liberal education.</div>
+                    <div class="pg10-txt2">I shall see the face of Mars, anyhow, and that will be a rare experience. It
+                        seems to me that a view of the heavenly bodies through a fine telescope, as well as a tour round
+                        the world, should form a part of a liberal education.</div>
                 </div>
                 <div><img class="imgpg10" src="./images/Bitmap (6).png" alt=""></div>
             </div>
         </div>
-    
-        
+
+
         <div class="page10-email">
             <div class="page10-email-text">Company Newsletter</div>
             <form action="/signup-form" id="signup-form">
                 <div class="email-space">
                     <label for="email"></label>
                     <input type="email" id="email" placeholder="Your Email">
-                        <button class="btn2" type="submit" name="submit" id="subscribe">Subscribe</button>
+                    <button class="btn2" type="submit" name="submit" id="subscribe">Subscribe</button>
                 </div>
             </form>
         </div>
-    </div>
-    <div class="footer"></div>
+        <div class="page11">
+            <div class="page11-txts">
+                <div class="page-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path
+                            d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z"
+                            fill="#F07566" />
+                    </svg>
+                    <div>Latest articles</div>
+                </div>
+                <div class="page11-txt-2">Check Our Insights</div>
+                <div class="page11-txt-3">See the face of Mars, anyhow, and that will be a rare experience seems to me
+                    that a view of the heavenly bodies through a fine telescope, as well as a tour round the world.
+                </div>
+            </div>
 
-    <!-- Swiper JS -->
+            <div class="page11-boxes">
+                <div class="pg11-topBox">
+                    <div class="pg11-topBox-pic"></div>
+                    <div class="pg11-topBox-txts">
+                        <div class="pg11-topBox-txt1">What looked like a small patch of purple grass</div>
+                        <div class="pg11-topBox-txt2">Truly it was a great journey, and in it I met with many, whom to
+                            know was to love.</div>
+                    </div>
+                </div>
+                <div class="pg11-otherBoxes-btn">
+                    <div class="pg11-otherBoxes">
+                       
+                        <div class="pg11-other-boxes1">
+                            <div class="pg11-box">
+                                <div class="pg11-box-pic1"></div>
+                                <div class="pg11-box-txt">Above five feet square, was moving across</div>
+                            </div>
+                            <div class="pg11-mid-box">
+                                <div class="pg11-box-pic2"></div>
+                                <div class="pg11-box-txt">Enough he perceived that it was not grass</div>
+                            </div>
+                            <div class="pg11-box">
+                                <div class="pg11-box-pic3"></div>
+                                <div class="pg11-box-txt">There were no blades, but only purple roots</div>
+                            </div>
+                        </div>
+                    
+                    <div class="pg11-other-boxes2" id="mainboxes">
+                        <div class="pg11-box">
+                            <div class="pg11-box-pic1"></div>
+                            <div class="pg11-box-txt">Above five feet square, was moving across</div>
+                        </div>
+                        <div class="pg11-mid-box">
+                            <div class="pg11-box-pic2"></div>
+                            <div class="pg11-box-txt">Enough he perceived that it was not grass</div>
+                        </div>
+                        <div class="pg11-box">
+                            <div class="pg11-box-pic3"></div>
+                            <div class="pg11-box-txt">There were no blades, but only purple roots</div>
+                        </div>
+                    </div>
+                </div>
+                    <button class="btn3" id="browse">Browse All</button>
+                </div>
+                
+            </div>
+        </div>
+
+    
+
+        <div class="footer">
+            <div class="footer-box">
+                <div class="footer-main">
+                    <div class="footer-title">CMP</div>
+                    <div class="footer-navigation">
+                        <div class="footer-navigation-title">Menu</div>
+                        <div class="footer-navigation-menu">
+                            <nav>
+                                <a href="#page2">About</a>
+                                <a href="#page5">Portfolio</a>
+                                <a href="#page6">Service</a>
+                                <a href="#page11">Blog</a>
+                                <a href="#page10">Contact</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer-navigation2">
+                        <div class="footer-navigation-title">Service</div>
+                        <div class="footer-navigation-menu">
+                            <nav>
+                                <a href="#page3">Consulting</a>
+                                <a href="#page3">Planning</a>
+                                <a href="#page3">Support</a>
+                                <a href="#page3">Cooperation</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <div class="footer-navigation-title">Social</div>
+                        <div class="social-icons">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="160" height="48" viewBox="0 0 160 48"
+                                fill="none">
+                                <a xlink:href="https://www.instagram.com/instagram/">
+                                <path
+                                    d="M136 48C149.255 48 160 37.2548 160 24C160 10.7452 149.255 0 136 0C122.745 0 112 10.7452 112 24C112 37.2548 122.745 48 136 48Z"
+                                    fill="#F07566" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" 
+                                    d="M136 16C133.827 16 133.556 16.0093 132.701 16.0493C129.795 16.1827 128.181 17.7947 128.048 20.7013C128.009 21.556 128 21.828 128 24C128 26.1733 128.009 26.4453 128.048 27.2987C128.181 30.204 129.795 31.8187 132.701 31.952C133.556 31.9907 133.827 32 136 32C138.173 32 138.445 31.9907 139.3 31.952C142.201 31.8187 143.821 30.2067 143.952 27.2987C143.991 26.4453 144 26.1733 144 24C144 21.828 143.991 21.556 143.952 20.7013C143.821 17.7987 142.207 16.1813 139.3 16.0493C138.445 16.0093 138.173 16 136 16ZM136 17.4427C138.136 17.4427 138.389 17.4507 139.233 17.4893C141.403 17.588 142.413 18.616 142.513 20.768C142.551 21.612 142.559 21.864 142.559 24C142.559 26.136 142.551 26.3893 142.513 27.232C142.413 29.3827 141.404 30.4133 139.233 30.512C138.389 30.5493 138.137 30.5587 136 30.5587C133.864 30.5587 133.611 30.5507 132.768 30.512C130.595 30.412 129.588 29.38 129.488 27.232C129.451 26.3893 129.441 26.136 129.441 24C129.441 21.864 129.451 21.6107 129.488 20.768C129.587 18.6147 130.597 17.5867 132.768 17.488C133.611 17.4493 133.864 17.4427 136 17.4427ZM131.892 24C131.892 21.7307 133.732 19.892 136 19.892C138.268 19.892 140.108 21.732 140.108 24C140.108 26.2693 138.268 28.108 136 28.108C133.732 28.108 131.892 26.2693 131.892 24ZM136 26.6667C134.527 26.6667 133.333 25.4733 133.333 24C133.333 22.528 134.527 21.3333 136 21.3333C137.472 21.3333 138.668 22.5267 138.668 24C138.668 25.4733 137.472 26.6667 136 26.6667ZM139.309 19.7307C139.309 19.2 139.74 18.7707 140.269 18.7707C140.801 18.7707 141.231 19.2 141.231 19.7307C141.231 20.2613 140.8 20.6907 140.269 20.6907C139.739 20.6907 139.309 20.26 139.309 19.7307Z"
+                                    fill="white" />
+                                <path
+                                    d="M80 48C93.2548 48 104 37.2548 104 24C104 10.7452 93.2548 0 80 0C66.7452 0 56 10.7452 56 24C56 37.2548 66.7452 48 80 48Z"
+                                    fill="#F07566" />
+                                <path
+                                    d="M88 19.54C87.412 19.8013 86.7787 19.9773 86.1147 20.0573C86.7933 19.6507 87.312 19.008 87.5587 18.2413C86.924 18.6173 86.2213 18.8907 85.4733 19.0373C84.876 18.3987 84.0213 18 83.0787 18C80.9587 18 79.4013 19.9773 79.88 22.0307C77.1533 21.8933 74.7333 20.5867 73.1147 18.6013C72.2547 20.076 72.6693 22.0067 74.1307 22.984C73.5933 22.9667 73.088 22.8187 72.6453 22.5733C72.6093 24.0933 73.7 25.516 75.2787 25.8333C74.8173 25.9587 74.3107 25.988 73.796 25.8893C74.2133 27.1933 75.428 28.1413 76.8627 28.168C75.48 29.2507 73.7427 29.7347 72 29.5293C73.4533 30.4613 75.1773 31.004 77.0307 31.004C83.1267 31.004 86.5693 25.856 86.3613 21.2387C87.004 20.7773 87.56 20.1987 88 19.54Z"
+                                    fill="white" />
+                                <path
+                                    d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+                                    fill="#F07566" />
+                                <path
+                                    d="M21.6667 21.3333H19V24H21.6667V32H25.6667V24H28.0933L28.3333 21.3333H25.6667V20.2227C25.6667 19.5853 25.7947 19.3333 26.4107 19.3333H28.3333V16H25.128C22.7307 16 21.6667 17.056 21.6667 19.0773V21.3333Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-line"></div>
+                    <div class="footer-bottom-txts">
+                        <div class="copyright">Copyright Â© 2020 Laaqiq. All Rights Reserved.</div>
+                        <div class="terms-privacy">
+                            <div>Terms of Use</div>
+                            <div>Privacy Policy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 3,
+        var swiper1 = new Swiper(".mySwiper1", {
+          slidesPerView: 1,
           spaceBetween: 30,
+          breakpoints: {
+            850: {
+              slidesPerView: 2,
+            },
+            1260: {
+              slidesPerView: 3,
+            },
+          },
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
           },
         });
+      
+        var swiper2 = new Swiper(".mySwiper2", {
+          navigation: {
+            nextEl: ".pg9-btn-next",
+            prevEl: ".pg9-btn-prev",
+          },
+          on: {
+            init: function () {
+              if (this.isBeginning) {
+                document.querySelector(".pg9-btn-prev").classList.add("disabled");
+              }
+            },
+            slideChange: function () {
+              const nextButton = document.querySelector(".pg9-btn-next");
+              const prevButton = document.querySelector(".pg9-btn-prev");
+      
+              if (this.isBeginning) {
+                prevButton.classList.add("disabled");
+              } else {
+                prevButton.classList.remove("disabled");
+              }
+      
+              if (this.isEnd) {
+                nextButton.classList.add("disabled");
+              } else {
+                nextButton.classList.remove("disabled");
+              }
+            },
+          },
+        });
+      
+        const nextButton = document.querySelector(".pg9-btn-next");
+        const prevButton = document.querySelector(".pg9-btn-prev");
+      
+        swiper2.on("reachEnd", function () {
+          nextButton.classList.add("disabled");
+        });
+      
+        swiper2.on("reachBeginning", function () {
+          prevButton.classList.add("disabled");
+        });
+      
+        swiper2.on("fromEdge", function () {
+          nextButton.classList.remove("disabled");
+          prevButton.classList.remove("disabled");
+        });
       </script>
-
     <script src="./script.js"></script>
 </body>
 
