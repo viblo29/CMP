@@ -2635,14 +2635,7 @@ text-transform: uppercase;
 }
 
 
-@media only screen and (min-width: 2000px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-  }
-
+@media only screen and (min-width: 1440px) {
   .container {
     display: flex;
     flex-direction: column;
