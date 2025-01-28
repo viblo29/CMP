@@ -2453,8 +2453,12 @@ nav a {
   .page10-email{
     /* flex-wrap: wrap; */
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 36px;
+  }
+  .email-space{
+    display: flex;
+    align-items: center;
   }
 
   #email{
@@ -2628,6 +2632,48 @@ nav a {
 
 @media only screen and (max-width: 768px) {
 
+  .header-hidden{
+    padding-right: 23px;
+    padding-left: 23px;
+  }
+
+  .bg-img{
+    width: 369px;
+    height: 632px;
+  }
+  .page1{
+    flex-direction: column-reverse;
+    gap: 50px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .page2{
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .page4{
+    flex-direction: column;
+    gap: 60px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .page6{
+    padding-right: 23px;
+    padding-left: 23px;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .page9{
+    padding-left: 23px;
+    padding-right: 23px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+
+
   .page3{
     height: 1623px;
     display: flex;
@@ -2685,13 +2731,14 @@ nav a {
 
   .page10-email{
     gap: 16px;
-    padding-left: 23px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 116.5px;
   }
   .email-space{
     flex-direction: column;
     gap: 16px;
-    align-items: flex-start;
+    align-items: center;
   }
   #email{
     margin-right: 0px;
@@ -2892,8 +2939,8 @@ nav a {
   }
 
   .bg-img{
-    width: 422px;
-    height: 461px;
+    width: 360px;
+    height: 622px;
   }
   .page1{
     flex-direction: column-reverse;
@@ -3178,6 +3225,13 @@ box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
   }
   .pg9-txtBox-btns{
     gap: 32px;
+  }
+  .page10-email{
+    padding-left: 23px;
+    align-items: start;
+  }
+  .email-space{
+    align-items: start;
   }
 
   .page10-email-text{

@@ -41,9 +41,12 @@ button.addEventListener('click',function(event){
 const openBtn = document.getElementById('openBtn')
 openBtn.addEventListener(`click`, function(){
     document.getElementById("mySidepanel").style.width = "250px";
+    document.getElementById("mySidepanel").style.border = "solid black 1px";
 
 })
 const closeBtn = document.getElementById('closeBtn')
 closeBtn.addEventListener(`click`, function(){
     document.getElementById("mySidepanel").style.width = "0";
+    document.getElementById("mySidepanel").style.border = "none";
+
 })
