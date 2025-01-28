@@ -21,7 +21,6 @@ const MainBox1 = document.getElementById('page5-img-5-6');
 const button1 = document.getElementById('browseAll');
 MainBox1.style.height = "0px"
 let visible1 = false;
-let transitionTime = 2;  
 
 MainBox1.style.opacity = 0;
 MainBox1.style.visibility = "hidden";  
@@ -76,17 +75,30 @@ const button = document.getElementById('browse')
 
 MainBoxes.style.display = "none"
 let visible = false
-
-button.addEventListener('click',function(event){
+MainBox1.style.opacity = 0;
+MainBox1.style.visibility = "hidden";  
+MainBox1.style.transition = "opacity 1s ease-in-out, visibility 0s 1s"; 
+button.addEventListener('click', function (event) {
     event.preventDefault();
     setTimeout(() => {
         if (visible) {
-            MainBoxes.style.display = "none"
+            MainBoxes.style.opacity = 0; 
+            MainBoxes.style.visibility = "hidden";  
+            setTimeout(() => {
+                MainBoxes.style.display = "none"; 
+                MainBoxes.style.height = "0px"
+            }, 500); 
         } else {
-            MainBoxes.style.display = "flex"
+            MainBoxes.style.display = "flex";  
+            setTimeout(() => {
+                MainBoxes.style.height = "auto"
+                MainBoxes.style.opacity = 1; 
+                MainBoxes.style.visibility = "visible";  
+            }, 100);  
         }
-        visible = !visible
-    }, 500);
+        MainBoxes.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        visible = !visible;
+    }, 500);  
 });
 
 
