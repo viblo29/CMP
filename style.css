@@ -2496,6 +2496,7 @@ height: 152px;
     justify-content: center;
   } 
   .page10-email{
+    padding-top: 68px;
     /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: center;
