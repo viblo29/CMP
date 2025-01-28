@@ -205,7 +205,7 @@ nav a {
 }
 
 .page1-text-2 {
-  width: 330px;
+  max-width: 330px;
   color: #4db282;
   font-family: "Hind Siliguri", serif;
   font-size: 72px;
@@ -634,7 +634,7 @@ nav a {
 }
 
 .pg4-txt-4 {
-  width: 470px;
+  max-width: 470px;
   height: 144px;
   border-radius: 8px;
   background: #fff;
@@ -2300,6 +2300,129 @@ nav a {
 
   .header-hidden{
     display: flex !important;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .bg-img{
+    width: 400px;
+    height: 700px;
+  }
+
+  .page1{
+    padding-top: 132px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 90px;
+  }
+  .page1-texts{
+    gap: 20px;
+  }
+  .page1-text-2{
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .img1{
+    width: 348px;
+    height: 330px;
+  }
+
+  .page2{
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 100px;
+  }
+  .img2{
+    width: 396px;
+    height: 304px;
+  }
+  .page2-texts{
+    gap: 20px;
+  }
+  .page2-text-3-4{
+    gap: 20px;
+  }
+  .page2-text-2{
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .page2-text-3{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .pg2-txt-4 {
+    font-size: 15px;
+  }
+
+  .page4{
+    padding-top: 154px;
+    padding-right: 23px;
+    padding-left: 23px;
+  }
+  .page4-txts{
+    gap: 19px;
+  }
+  .page4-txt-2-3{
+    gap: 20px;
+  }
+  .pg4-txt-2{
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .pg4-txt-3{
+    font-size: 15px;
+  }
+  .pg4-txt-4{
+    height: 150px;
+  }
+  .img4{
+    width: 346px;
+    height: 360px;
+  }
+
+  .page6{
+    padding-right: 23px;
+    padding-left: 23px;
+  }
+  .page6-txts{
+    gap: 20px;
+  }
+
+  .page6-txt-2{
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .page6-txt-3-logos{
+    gap: 20px;
+  }
+  .page6-logos{
+    gap: 30px;
+  }
+  .page6-img{
+    width: 370px;
+    height: 312px;
+  }
+
+  .page9{
+    padding-top: 127px;
+    padding-right: 23px;
+    padding-left: 23px;
+  }
+  .page9-img {
+    width: 370px;
+    height: 277px;
+  }
+  .pg9-txtBox-btns{
+    gap: 20px;
+  }
+  .pg9-txt-box-txt1{
+    font-size: 15px
+  }
+  .pg9-txt-box-txt2{
+    font-size: 23px
+  }
+  .page9-txt-box{
+    width: 370px;
+    height: 244px;
   }
 
   .page5-box{
@@ -2330,7 +2453,7 @@ nav a {
   .page10-email{
     /* flex-wrap: wrap; */
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex;
     gap: 36px;
   }
 
@@ -2763,6 +2886,11 @@ nav a {
 
 @media only screen and (max-width: 480px) {
   
+  .header-hidden{
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
   .bg-img{
     width: 422px;
     height: 461px;
