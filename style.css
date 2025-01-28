@@ -2375,10 +2375,6 @@ nav a {
 
 @media only screen and (max-width: 768px) {
 
-  .page8-txt3 {
-    width: 400px;
-  }
-
   .page11 {
     height: auto;
   }
@@ -2612,8 +2608,6 @@ nav a {
     width: 254px;
     height: 17px;
   }
-
-
   .page2{
     padding-top: 70px;
     flex-direction: column;
@@ -2723,6 +2717,22 @@ letter-spacing: -1px;
     height: 294px;
   }
 
+  .pg8-txt-1-2{
+    gap: 17px;
+  }
+  .page8-txt2{
+    color: #333;
+text-align: center;
+font-family: "Hind Siliguri";
+font-size: 40px;
+font-weight: 700;
+line-height: 48px; /* 120% */
+letter-spacing: -1px;
+  }
+  .page8-txts{
+    gap: 15px;
+  }
+
   .page9{
     padding-top: 160px;
     flex-direction: column;
@@ -2764,15 +2774,6 @@ box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
   }
 
 
-
-
-  
-  .pg8-txt-1-2{
-    gap: 17px;
-  }
-  .page8-txts{
-    gap: 15px;
-  }
 }
 
 @media only screen and (min-width: 1600px) {
