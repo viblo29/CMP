@@ -73,14 +73,14 @@
   border-radius: 10px;
   top: 16px;
   position: absolute;
-  height: 250px; /* Specify a height */
-  width: 0; /* 0 width - change this with JavaScript */
- /* Stay in place */
-z-index: 10;
-  background-color: white; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  height: 250px; 
+  width: 0; 
+
+  z-index: 10;
+  background-color: white; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
 }
 .sidepanel a {
   padding: 8px 8px 8px 32px;
@@ -90,7 +90,7 @@ font-family: "Work Sans";
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 32px; /* 200% */
+line-height: 32px; 
   display: block;
   transition: 0.3s;
 }
@@ -565,6 +565,7 @@ nav a {
 }
 
 .page3-box:hover{
+  scale: 1.05;
   cursor: pointer;
   border-radius: 8px;
   background: #fff;
@@ -891,6 +892,34 @@ nav a {
 .page5-img-2-3 {
   display: flex;
   gap: 30px;
+}
+.page5-img-5-6 {
+  display: flex;
+  gap: 30px;
+}
+.page5-img5 {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  width: 570px;
+  height: 384px;
+  border-radius: 8px;
+  background: #D8D8D8;
+  background-image: url(./images/orb.png.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page5-img6 {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  width: 570px;
+  height: 384px;
+  border-radius: 8px;
+  background: #D8D8D8;
+  background-image: url(./images/orb.png.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .page5-btn {
@@ -2159,6 +2188,12 @@ height: 152px;
   .page5-img-2-3{
     gap: 15px;
   }
+  .page5-img-5-6{
+    gap: 15px;
+  }
+  .page5-img4{
+    width: 500px;
+  }
 
   .page9-img {
     width: 470px;
@@ -2485,6 +2520,12 @@ height: 152px;
   .page5-img4{
     width: 768px;
   }
+  .page5-img6{
+    width: 768px;
+  }
+  .page5-img5{
+    width: 768px;
+  }
   .page5-img-1-2{
     gap: 0px;
     flex-wrap: wrap; 
@@ -2495,9 +2536,13 @@ height: 152px;
     flex-wrap: wrap;
     justify-content: center;
   } 
+  .page5-img-5-6{
+    gap: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  } 
   .page10-email{
     padding-top: 68px;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: center;
     gap: 36px;
@@ -2799,15 +2844,22 @@ height: 464px;
   .page5-img4{
     width: 480px;
   }
+  .page5-img5{
+    width: 480px;
+  }
+  .page5-img6{
+    width: 480px;
+  }
   .page5-img-1-2{
     justify-content: center;
   }
   .page5-img-2-3{
     justify-content: center;
   }
-  .page5-box-txt-2{
-    font-size: 40px;
+  .page5-img-5-6{
+    justify-content: center;
   }
+  
   .page10{
     padding-right: 23px;
     padding-left: 23px;
@@ -2831,7 +2883,7 @@ height: 464px;
       top: 87.890625%;
       right: 17.325227963525837%;
       width: 215px;
-height: 108px;
+      height: 108px;
     }
 
   .page10-email{
@@ -3227,6 +3279,20 @@ line-height: 32px;
     width: 329px;
     height: 222px;
   }
+  .page5-img-5-6{
+    display: flex;
+    flex-direction: column;
+    padding-top: 53px;
+    gap: 53px;
+  }
+  .page5-img5{
+    width: 329px;
+    height: 222px;
+  }
+  .page5-img6{
+    width: 329px;
+    height: 222px;
+  }
   .page5-txts{
     gap: 17px;
     padding-bottom: 45px;
@@ -3285,7 +3351,7 @@ text-align: center;
 font-family: "Hind Siliguri";
 font-size: 40px;
 font-weight: 700;
-line-height: 48px; /* 120% */
+line-height: 48px; 
 letter-spacing: -1px;
   }
   .page8-txts{
