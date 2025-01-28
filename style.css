@@ -2805,7 +2805,9 @@ height: 464px;
   .page5-img-2-3{
     justify-content: center;
   }
-
+  .page5-box-txt-2{
+    font-size: 40px;
+  }
   .page10{
     padding-right: 23px;
     padding-left: 23px;
