@@ -1514,6 +1514,8 @@ nav a {
 }
 
 .imgpg10 {
+  width: 302px;
+height: 152px;
   position: absolute;
   right: 35%;
   top: 71.875%;
@@ -2750,17 +2752,31 @@ nav a {
     justify-content: center;
   }
 
+  .page10{
+    padding-right: 23px;
+    padding-left: 23px;
+  }
   .page10-box{
     flex-direction: column;
     width: 329px;
-height: 768px;
-
+    height: 768px;
+    padding: 56px;
   }
-  .imgpg10{
-    right: 50%;
-    top: 100%;
+  .pg10-txt-btn{
+    width: 184px;
   }
 
+  .page10-txt-2{
+    padding-top: 59px;
+    width: 216px;
+    height: 293px;
+    }
+    .imgpg10{
+      top: 87.890625%;
+      right: 17.325227963525837%;
+      width: 215px;
+height: 108px;
+    }
 
   .page10-email{
     gap: 16px;
