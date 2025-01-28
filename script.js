@@ -37,3 +37,13 @@ button.addEventListener('click',function(event){
     }, 500);
 });
 
+
+const openBtn = document.getElementById('openBtn')
+openBtn.addEventListener(`click`, function(){
+    document.getElementById("mySidepanel").style.width = "250px";
+
+})
+const closeBtn = document.getElementById('closeBtn')
+closeBtn.addEventListener(`click`, function(){
+    document.getElementById("mySidepanel").style.width = "0";
+})
