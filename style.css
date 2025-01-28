@@ -1162,11 +1162,11 @@ nav a {
   font-size: 56px;
   font-weight: 700;
   line-height: 64px;
-  width: 600px;
+  max-width: 600px;
 }
 
 .pg7-txt2 {
-  width: 570px;
+  max-width: 570px;
   color: #FFF;
   font-family: "Work Sans";
   font-size: 20px;
@@ -1174,7 +1174,7 @@ nav a {
 }
 
 .page8 {
-  padding-top: 69.5px;
+  padding-top: 139px;
 }
 
 .page8-txts {
@@ -2095,6 +2095,24 @@ height: 152px;
 
 @media only screen and (max-width: 1200px) {
 
+  .page7-box{
+    padding-right: 50px;
+    padding-left: 50px;
+    justify-content: space-between;
+  }
+  .pg7-txt1{
+    width: 393px;
+  }
+  .page7{
+    justify-content: space-between;
+  }
+  .page7-vid {
+    width: 50%;
+  }
+  .page7-txts{
+    width: 40%;
+  }
+
   .header {
     padding-right: 100px;
     padding-left: 100px;
@@ -2391,6 +2409,7 @@ height: 152px;
   }
 
   .page6{
+    padding-bottom: 202px;
     padding-right: 23px;
     padding-left: 23px;
   }
@@ -2477,6 +2496,7 @@ height: 152px;
     justify-content: center;
   } 
   .page10-email{
+    padding-top: 68px;
     /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: center;
@@ -2657,6 +2677,40 @@ height: 152px;
 }
 
 @media only screen and (max-width: 768px) {
+
+  .page7{
+    height: 846px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .page7-box{
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 820px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .page7-vid{
+    display: flex;
+    justify-content: center;
+    width: 339px;
+height: 464px;
+    top: -26px;
+    position: relative;
+  }
+  .pg7-vid {
+    width: 339px;
+height: 464px;
+  }
+  .page7-txts{
+    width: 329px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 62px;
+    height: 40%;
+  }
 
   .header-hidden{
     padding-right: 23px;
