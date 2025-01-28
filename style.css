@@ -11,8 +11,10 @@
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
+
   position: relative;
   scroll-behavior: smooth;
+  background: #FFF;
 }
 
 .page-title {
@@ -37,7 +39,7 @@
   width: 569px;
   height: 832px;
   background-repeat: no-repeat;
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="569" height="832" viewBox="0 0 569 832" fill="none"><path d="M166.18 -85.1249C167.109 -86.847 167.573 -87.708 168.286 -88.3764C168.904 -88.9565 169.682 -89.4209 170.486 -89.69C171.413 -90 172.426 -90 174.453 -90H834.4C837.76 -90 839.44 -90 840.724 -89.346C841.853 -88.7708 842.771 -87.8529 843.346 -86.7239C844 -85.4404 844 -83.7603 844 -80.4V765.922C844 768.388 844 769.621 843.573 770.692C843.202 771.623 842.573 772.481 841.797 773.115C840.904 773.844 839.788 774.196 837.557 774.9C802.384 785.996 628.89 837.48 458.081 830.709C293.701 824.192 223.047 772.821 137.945 736.426C58.1927 702.32 15.5995 695.009 2.97976 613.808C-14.5147 501.24 49.7697 487.873 72.4587 357.084C92.7178 240.302 64.1158 233.505 88.876 118.666C109.264 24.1053 154.702 -63.8416 166.18 -85.1249Z" fill="%23FFFAEA"/></svg>');
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 569 832" fill="none"><path d="M166.18 -85.1249C167.109 -86.847 167.573 -87.708 168.286 -88.3764C168.904 -88.9565 169.682 -89.4209 170.486 -89.69C171.413 -90 172.426 -90 174.453 -90H834.4C837.76 -90 839.44 -90 840.724 -89.346C841.853 -88.7708 842.771 -87.8529 843.346 -86.7239C844 -85.4404 844 -83.7603 844 -80.4V765.922C844 768.388 844 769.621 843.573 770.692C843.202 771.623 842.573 772.481 841.797 773.115C840.904 773.844 839.788 774.196 837.557 774.9C802.384 785.996 628.89 837.48 458.081 830.709C293.701 824.192 223.047 772.821 137.945 736.426C58.1927 702.32 15.5995 695.009 2.97976 613.808C-14.5147 501.24 49.7697 487.873 72.4587 357.084C92.7178 240.302 64.1158 233.505 88.876 118.666C109.264 24.1053 154.702 -63.8416 166.18 -85.1249Z" fill="%23FFFAEA"/></svg>');
 }
 
 .header {
@@ -146,8 +148,7 @@ nav a {
 }
 
 .page1-text-3 {
-  width: 470px;
-  height: 68px;
+  max-width: 470px;
   color: #333;
   font-family: "Work Sans", serif;
   font-size: 20px;
@@ -385,21 +386,8 @@ nav a {
   gap: 20px;
 }
 
-/* .page2-txt-1 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #f07566;
-  font-family: "Hind Siliguri", serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-} */
-
 .page2-text-2 {
-  width: 328px;
+  max-width: 328px;
   color: #333;
   font-family: "Hind Siliguri";
   font-size: 56px;
@@ -555,7 +543,7 @@ nav a {
 }
 
 .pg4-txt-2 {
-  width: 387px;
+  max-width: 387px;
   color: #333;
   font-family: "Hind Siliguri";
   font-size: 56px;
@@ -564,7 +552,7 @@ nav a {
 }
 
 .pg4-txt-3 {
-  width: 470px;
+  max-width: 470px;
   color: #333;
   font-family: "Work Sans";
   font-size: 16px;
@@ -601,7 +589,7 @@ nav a {
 }
 
 .pg4-txt-4-h2 {
-  width: 406px;
+  max-width: 406px;
   color: rgba(51, 51, 51, 0.50);
   font-family: "Work Sans";
   font-size: 14px;
@@ -857,6 +845,7 @@ nav a {
   padding-right: 135px;
   padding-bottom: 105px;
 }
+
 .logos2 {
   padding-top: 72px;
   display: none;
@@ -864,7 +853,7 @@ nav a {
   padding-bottom: 105px;
 }
 
-.two-logos{
+.two-logos {
   display: flex;
   justify-content: space-around;
   gap: 30px;
@@ -894,7 +883,7 @@ nav a {
 }
 
 .page6-txt-2 {
-  width: 500px;
+  max-width: 500px;
   color: #333;
   font-family: "Hind Siliguri";
   font-size: 56px;
@@ -903,11 +892,9 @@ nav a {
 }
 
 .page6-txt-3-logos {
-  width: 470px;
+  max-width: 470px;
   color: #333;
   font-family: "Work Sans";
-  font-size: 16px;
-  font-weight: 400;
   line-height: 32px;
   display: flex;
   flex-direction: column;
@@ -1144,20 +1131,6 @@ nav a {
   gap: 20px;
 }
 
-/* .page8-txt-1 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-color: #F07566;
-font-family: "Hind Siliguri";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px;
-letter-spacing: 1px;
-text-transform: uppercase;
-} */
-
 .page8-txt2 {
   color: #333;
   text-align: center;
@@ -1165,15 +1138,19 @@ text-transform: uppercase;
   font-size: 56px;
   font-weight: 700;
   line-height: 64px;
+  margin-left: 23px;
+  margin-right: 23px;
 }
 
 .page8-txt3 {
-  width: 770px;
+  max-width: 770px;
   color: rgba(51, 51, 51, 0.50);
   text-align: center;
   font-size: 16px;
   font-family: "Work Sans";
   line-height: 32px;
+  margin-left: 23px;
+  margin-right: 23px;
 }
 
 
@@ -1184,15 +1161,6 @@ text-transform: uppercase;
 .swiper-pagination-bullet {
   background-color: #FFE4E1;
 }
-
-/* .swper {
-  height: 512px;
-  padding-left: 135px;
-  padding-right: 135px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 .swiper-slide1 {
   display: flex;
@@ -1341,7 +1309,7 @@ text-transform: uppercase;
   padding-top: 34px;
   display: flex;
   flex-direction: column;
-  gap: 17px;
+
 }
 
 .page9-txt-1-2 {
@@ -1354,7 +1322,6 @@ text-transform: uppercase;
   color: #333;
   font-family: "Hind Siliguri";
   font-size: 56px;
-  font-style: normal;
   font-weight: 700;
   line-height: 64px;
   letter-spacing: -1px;
@@ -1382,13 +1349,10 @@ text-transform: uppercase;
 }
 
 .pg9-txt-box-txt1 {
-  width: 406px;
-  height: 96px;
+  max-width: 406px;
   color: rgba(51, 51, 51, 0.50);
   font-family: "Work Sans";
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 32px;
 }
 
@@ -1448,7 +1412,7 @@ text-transform: uppercase;
 }
 
 .pg9-btn-next.disabled {
-  cursor: not-allowed;
+  pointer-events: none;
   background: gray;
   background-position: center;
   background-repeat: no-repeat;
@@ -1457,7 +1421,7 @@ text-transform: uppercase;
 }
 
 .pg9-btn-prev.disabled {
-  cursor: not-allowed;
+  pointer-events: none;
   background: gray;
   background-position: center;
   background-repeat: no-repeat;
@@ -1935,7 +1899,7 @@ text-transform: uppercase;
     display: flex;
     justify-content: center;
   }
-   
+
   .page6 {
     display: flex;
     justify-content: center;
@@ -2011,12 +1975,14 @@ text-transform: uppercase;
     padding-left: 0;
     padding-right: 0;
   }
-  .logos{
+
+  .logos {
     justify-content: space-evenly;
     gap: 30px;
     padding-right: 0;
     padding-left: 0;
   }
+
   .page6 {
     display: flex;
     justify-content: space-evenly;
@@ -2066,29 +2032,33 @@ text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1200px) {
-  
-  .header{
+
+  .header {
     padding-right: 100px;
     padding-left: 100px;
   }
-  
-  .img1{
+
+  .img1 {
     width: 448px;
     height: 430px;
   }
-  .img2{
+
+  .img2 {
     width: 496px;
     height: 404px;
   }
-  .img4{
+
+  .img4 {
     width: 446px;
     height: 460px;
   }
-  .page6-img{
+
+  .page6-img {
     width: 470px;
     height: 412px;
   }
-  .page9-img{
+
+  .page9-img {
     width: 470px;
     height: 377px;
   }
@@ -2119,7 +2089,7 @@ text-transform: uppercase;
     padding-top: 18px;
     color: #333;
     text-align: center;
-    font-size: 48px;
+    font-size: 51px;
     font-weight: 700;
     line-height: 64px;
   }
@@ -2245,14 +2215,16 @@ text-transform: uppercase;
     height: 612px;
     padding-bottom: 80px;
   }
-  .logos{
+
+  .logos {
     display: none;
-}
-  .logos2{
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
+  }
+
+  .logos2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
 
   .page11 {
     padding-top: 70.5px;
@@ -2269,11 +2241,12 @@ text-transform: uppercase;
   }
 
   .pg11-topBox-pic {
-    width: 550px;
-    height: 208px;
+    width: 530px;
+    height: 108px;
     border-radius: 3px 3px 40px 3px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    margin-top: 40px;
   }
 
   .page11-txt-2 {
@@ -2297,8 +2270,8 @@ text-transform: uppercase;
   }
 
   .pg11-topBox {
-    width: 900px;
-    height: 290px;
+    width: 750px;
+    height: 240px;
     border-radius: 6px;
     padding: 16px;
     gap: 60px;
@@ -2306,18 +2279,27 @@ text-transform: uppercase;
 
   .pg11-topBox-txt1 {
     width: 400px;
-    font-size: 36px;
-    font-weight: 660;
+    font-size: 30px;
+    font-weight: 610;
     line-height: 48px;
+    padding-top: 15px;
   }
 
   .pg11-topBox-txt2 {
-    font-size: 18px;
-    font-weight: 360;
+    font-size: 16px;
+    font-weight: 340;
+    padding-top: 10px;
+  }
+
+  .pg11-topBox-txts {
+    padding-top: 0;
+    gap: 0;
   }
 
   .pg11-other-boxes1 {
     gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .pg11-box {
@@ -2329,6 +2311,7 @@ text-transform: uppercase;
     background: #FFF;
     flex-direction: column;
     gap: 20px;
+    
   }
 
   .pg11-mid-box {
@@ -2371,50 +2354,428 @@ text-transform: uppercase;
 
   .pg11-other-boxes2 {
     gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
+  .footer-box{
+    padding-left: 50px;
+  }
+  .footer-navigation{
+    padding-left: 80px;
+    padding-right: 10%;
+  }
+  .footer-navigation2{
+    padding-right: 8%;
+  }
+  .footer-social{
+    padding-left: 8%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+
   .page8-txt3 {
     width: 400px;
   }
-}
 
-@media only screen and (max-width: 455px) {
-  .page8-txt2 {
-    color: #333;
-    text-align: center;
-    font-family: "Hind Siliguri";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
-    letter-spacing: -1px;
+  .page11 {
+    height: auto;
   }
 
-  .page8-txt3 {
-    width: 329px;
-    color: rgba(51, 51, 51, 0.50);
-    text-align: center;
-    font-family: "Work Sans";
+  .page-title {
     font-size: 16px;
-    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 1px;
+  }
+
+  .pg11-topBox {
+    width: 450px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #E6EDF5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2px;
+    align-items: center;
+  }
+
+  .page11-txt-2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .pg11-topBox-txts {
+    padding-top: 0px;
+    gap: 12px
+  }
+
+  .page11-txt-3 {
+    width: 340px;
+    height: 200px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+
+  .pg11-topBox-pic {
+    width: 297px;
+    height: 198px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 4.274px 4.274px 26.715px 4.274px;
+  }
+
+  .pg11-topBox-txt1 {
+    width: 340px;
+    color: #333;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    padding-top: 1px;
+  }
+
+  .pg11-topBox-txt2 {
+    width: 340px;
+    height: 103px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 32px;
   }
 
+  .pg11-other-boxes1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .pg11-other-boxes2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .page11-boxes {
+    gap: 16px;
+  }
+
+  .pg11-box {
+    width: 450px;
+    height: 352px;
+    border-radius: 8px;
+    border: 1px solid #E6EDF5;
+    align-items: center;
+  }
+
+  .pg11-mid-box {
+    width: 450px;
+    height: 352px;
+    border-radius: 8px;
+    box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
+    align-items: center;
+  }
+
+  .pg11-box-pic1 {
+    width: 400px;
+    height: 330px;
+  }
+
+  .pg11-otherBoxes {
+    gap: 16px;
+  }
+
+  .pg11-box-txt {
+    width: 350px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .pg11-box-pic2 {
+    width: 400px;
+    height: 330px;
+  }
+
+  .pg11-box-pic3 {
+    width: 400px;
+    height: 330px;
+  }
+
+
+  .footer-box {
+    height: auto;
+    padding-left: 23px;
+    padding-right: 0;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+  }
+
+  .footer-navigation {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 63px;
+    gap: 32px;
+  }
+
+  .footer-navigation2 {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 64px;
+    gap: 32px;
+  }
+
+  .footer-social {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 64px;
+    gap: 32px;
+  }
+
+  .copyright {
+    text-align: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 230px;
+
+  }
+
+  .footer-bottom-txts {
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .terms-privacy {
+    padding-top: 32px;
+  }
+
+  .footer-line {
+    width: 95%;
+  }
 }
 
+@media only screen and (max-width: 480px) {
+  
+  .header{
+    width: 100%;
+    display: none;
+  }
 
-@media only screen and (min-width: 2000px) {
-  body {
-    width: 100vw;
-    height: 100vh;
+  .bg-img{
+    width: 422px;
+    height: 461px;
+  }
+  .page1{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 107px;
+    padding-bottom: 70px;
+  }
+  .img1{
+    width: 357px;
+    height: 359px;
+  }
+  .page1-img{
+    padding-bottom: 53px;
+    padding-right: 23px;
+    padding-left: 23px;
+  }
+  .page1-texts{
+    padding-left: 23px;
+    padding-right: 23px;
+    gap: 30px;
+  }
+  .page1-text-1-2{
+    gap: 20px;
+  }
+  .page1-text-2{
+    color: #333;
+    font-family: "Hind Siliguri";
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -1px;
+  }
+  .underline{
+    width: 254px;
+    height: 17px;
+  }
+
+
+  .page2{
+    padding-top: 70px;
+    flex-direction: column;
+    align-items: start;
+    padding-right: 23px;
+    padding-left: 23px;
+  }
+  .page2-img{
+    width: 100%;
     display: flex;
     justify-content: center;
   }
+  .img2{
+    width: 367px;
+    height: 308px;
+  }
+  .page2-text-1-2{
+    gap: 17px;
+  }
+  .page2-texts{
+    gap: 13px;
+  }
+  .page2-text-3-4{
+    gap: 18px;
+  }
+  .page2-text-2{
+    width: 231px;
+    color: #333;
+font-family: "Hind Siliguri";
+font-size: 40px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -1px;
+  }
+  .page2-text-3{
+    color: #333;
+font-family: "Hind Siliguri";
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+  }
 
+  .page4{
+    flex-direction: column;
+    padding-right: 23px;
+    padding-left: 23px;
+    gap: 78px;
+  }
+  .page4-txts{
+    padding-top: 0;
+    gap: 13px;
+  }
+  .page4-txt-2-3{
+    padding-top: 4px;
+    gap: 15px;
+  }
+  .pg4-txt-2{
+    color: #333;
+font-family: "Hind Siliguri";
+font-size: 40px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -1px;
+  }
+  .pg4-txt-3{
+    color: #333;
+font-family: "Work Sans";
+line-height: 32px;
+  }
+  .pg4-txt-4{
+    width: 329px;
+    height: 160px;
+  }
+  .img4{
+    width: 342px;
+    height: 380px;
+  }
+
+  .page6{
+    padding-top: 64px;
+    flex-direction: column;
+    padding-right: 23px;
+    padding-left: 23px;
+    gap: 69px;
+  }
+  .page6-txts{
+    padding-top: 0;
+    gap: 15px;
+  }
+  .page6-txt-1-2{
+    gap: 17px;
+  }
+  .page6-txt-2{
+    color: #333;
+font-family: "Hind Siliguri";
+font-size: 40px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -1px;
+  }
+  .page6-logos{
+    flex-direction: column;
+    gap: 29px;
+  }
+  .page6-img{
+    width: 368px;
+    height: 294px;
+  }
+
+  .page9{
+    padding-top: 160px;
+    flex-direction: column;
+    gap: 40px;
+    padding-right: 23px;
+    padding-left: 23px;
+  }
+  .page9-img{
+    width: 342px;
+  height: 275px;
+  }
+  .page9-txts{
+    padding-top: 0;
+  }
+  .page9-txt-1-2{
+    gap: 17px;
+  }
+  .page9-txt-2{
+    color: #333;
+font-family: "Hind Siliguri";
+font-size: 40px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -1px;
+  }
+  .page9-txt-box{
+    width: 329px;
+  height: 288px;
+  text-align: start;
+  border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
+  }
+  .pg9-txt-box-txt1{
+    width: 251px;
+  }
+  .pg9-txtBox-btns{
+    gap: 32px;
+  }
+
+
+
+
+  
+  .pg8-txt-1-2{
+    gap: 17px;
+  }
+  .page8-txts{
+    gap: 15px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -2464,11 +2825,11 @@ text-transform: uppercase;
 }
 
 
-@media only screen and (max-width: 915px) {
-  
-}
+@media only screen and (max-width: 915px) {}
 
-@media only screen and (max-width: 965px){
+@media only screen and (max-width: 965px) {}
+
+@media only screen and (max-width: 480px) {
   .page11 {
     height: auto;
   }
@@ -2882,3 +3243,6 @@ text-transform: uppercase;
     height: 96px;
   }
 }
+
+}
+
