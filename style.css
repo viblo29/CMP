@@ -1756,6 +1756,7 @@ nav a {
 }
 
 .pg11-box:hover {
+  scale: 1.05;
   border-radius: 8px;
   background: #FFF;
   box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
@@ -1810,6 +1811,7 @@ nav a {
 }
 
 .pg11-mid-box:hover {
+  scale: 1.05;
   border-radius: 8px;
   background: #FFF;
   box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
