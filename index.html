@@ -828,22 +828,68 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper1 = new Swiper(".mySwiper1", {
-            slidesPerView: 1,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+        730: {
+            slidesPerView: 2,
             spaceBetween: 30,
-            breakpoints: {
-                730: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                1260: {
-                    slidesPerView: 3,
-                },
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
+        },
+        1260: {
+            slidesPerView: 3,
+        },
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    on: {
+        slideChange: function () {
+            updateMiddleSlideShadow(this);
+        },
+        init: function () {
+            updateMiddleSlideShadow(this);
+        }
+    }
+});
+
+function updateMiddleSlideShadow(swiper) {
+    document.querySelectorAll(".mySwiper1 .swiper-slide").forEach(slide => {
+        slide.classList.remove("middle-slide");
+    });
+    let middleIndex;
+    if (swiper.params.slidesPerView === 3) {
+        middleIndex = swiper.activeIndex + 1;
+    } else if (swiper.params.slidesPerView === 2) {
+        middleIndex = swiper.activeIndex + 1;
+    } else {
+        middleIndex = swiper.activeIndex;
+    }
+
+    let middleSlide = swiper.slides[middleIndex];
+    if (middleSlide) {
+        middleSlide.classList.add("middle-slide");
+    }
+}
+function updateMiddleSlideShadow(swiper) {
+    document.querySelectorAll(".mySwiper1 .swiper-slide").forEach(slide => {
+        slide.classList.remove("middle-slide");
+    });
+    let middleIndex;
+    if (swiper.params.slidesPerView === 3) {
+        middleIndex = swiper.activeIndex + 1;
+    } else if (swiper.params.slidesPerView === 2) {
+        middleIndex = swiper.activeIndex + 1;
+    } else {
+        middleIndex = swiper.activeIndex;
+    }
+
+    let middleSlide = swiper.slides[middleIndex];
+    if (middleSlide) {
+        middleSlide.classList.add("middle-slide");
+    }
+}
+
 
         var swiper2 = new Swiper(".mySwiper2", {
             navigation: {
