@@ -114,3 +114,19 @@ closeBtn.addEventListener(`click`, function(){
     document.getElementById("mySidepanel").style.border = "none";
 
 })
+
+
+
+const grab = document.querySelector('.mySwiper1 .swiper-slide');
+
+grab.addEventListener('mousedown', () => {
+  grab.classList.add('grabbing');
+});
+
+grab.addEventListener('mouseup', () => {
+  grab.classList.remove('grabbing');
+});
+
+grab.addEventListener('mouseleave', () => {
+  grab.classList.remove('grabbing');
+});

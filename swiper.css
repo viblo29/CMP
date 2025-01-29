@@ -83,6 +83,12 @@ html,
       background: #FFF;
       transition: box-shadow 0.3s ease-in-out;
     }
+    .mySwiper1 .swiper-slide:hover {
+      cursor: grab;
+    }
+    .mySwiper1 .swiper-slide:active {
+      cursor: grabbing;
+    }
 
     @media only screen and (max-width: 1259px) {
       .mySwiper1 .middle-slide{
