@@ -828,21 +828,73 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper1 = new Swiper(".mySwiper1", {
-            slidesPerView: 1,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+        730: {
+            slidesPerView: 2,
             spaceBetween: 30,
-            breakpoints: {
-                850: {
-                    slidesPerView: 2,
-                },
-                1260: {
-                    slidesPerView: 3,
-                },
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
+        },
+        1260: {
+            slidesPerView: 3,
+        },
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    on: {
+        slideChange: function () {
+            updateMiddleSlideShadow(this);
+        },
+        init: function () {
+            updateMiddleSlideShadow(this);
+        }
+    }
+});
+
+function updateMiddleSlideShadow(swiper) {
+    // Remove shadow from all slides
+    document.querySelectorAll(".mySwiper1 .swiper-slide").forEach(slide => {
+        slide.classList.remove("middle-slide");
+    });
+
+    // Find the second visible slide
+    let middleIndex;
+    if (swiper.params.slidesPerView === 3) {
+        middleIndex = swiper.activeIndex + 1; // Middle slide when 3 are visible
+    } else if (swiper.params.slidesPerView === 2) {
+        middleIndex = swiper.activeIndex + 1; // Middle slide when 2 are visible
+    } else {
+        middleIndex = swiper.activeIndex; // Only 1 slide visible
+    }
+
+    let middleSlide = swiper.slides[middleIndex];
+    if (middleSlide) {
+        middleSlide.classList.add("middle-slide");
+    }
+}
+function updateMiddleSlideShadow(swiper) {
+    // Remove middle shadow from all slides and add the default light shadow
+    document.querySelectorAll(".mySwiper1 .swiper-slide").forEach(slide => {
+        slide.classList.remove("middle-slide");
+    });
+
+    // Find the second visible slide
+    let middleIndex;
+    if (swiper.params.slidesPerView === 3) {
+        middleIndex = swiper.activeIndex + 1; // Middle slide when 3 are visible
+    } else if (swiper.params.slidesPerView === 2) {
+        middleIndex = swiper.activeIndex + 1; // Middle slide when 2 are visible
+    } else {
+        middleIndex = swiper.activeIndex; // Only 1 slide visible
+    }
+
+    let middleSlide = swiper.slides[middleIndex];
+    if (middleSlide) {
+        middleSlide.classList.add("middle-slide");
+    }
+}
 
         var swiper2 = new Swiper(".mySwiper2", {
             navigation: {
