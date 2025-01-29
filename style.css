@@ -2468,6 +2468,12 @@ height: 152px;
     width: 370px;
     height: 312px;
   }
+  
+  .page8{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .page9{
     padding-top: 127px;
