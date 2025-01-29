@@ -854,19 +854,16 @@
 });
 
 function updateMiddleSlideShadow(swiper) {
-    // Remove shadow from all slides
     document.querySelectorAll(".mySwiper1 .swiper-slide").forEach(slide => {
         slide.classList.remove("middle-slide");
     });
-
-    // Find the second visible slide
     let middleIndex;
     if (swiper.params.slidesPerView === 3) {
-        middleIndex = swiper.activeIndex + 1; // Middle slide when 3 are visible
+        middleIndex = swiper.activeIndex + 1;
     } else if (swiper.params.slidesPerView === 2) {
-        middleIndex = swiper.activeIndex + 1; // Middle slide when 2 are visible
+        middleIndex = swiper.activeIndex + 1;
     } else {
-        middleIndex = swiper.activeIndex; // Only 1 slide visible
+        middleIndex = swiper.activeIndex;
     }
 
     let middleSlide = swiper.slides[middleIndex];
@@ -875,19 +872,16 @@ function updateMiddleSlideShadow(swiper) {
     }
 }
 function updateMiddleSlideShadow(swiper) {
-    // Remove middle shadow from all slides and add the default light shadow
     document.querySelectorAll(".mySwiper1 .swiper-slide").forEach(slide => {
         slide.classList.remove("middle-slide");
     });
-
-    // Find the second visible slide
     let middleIndex;
     if (swiper.params.slidesPerView === 3) {
-        middleIndex = swiper.activeIndex + 1; // Middle slide when 3 are visible
+        middleIndex = swiper.activeIndex + 1;
     } else if (swiper.params.slidesPerView === 2) {
-        middleIndex = swiper.activeIndex + 1; // Middle slide when 2 are visible
+        middleIndex = swiper.activeIndex + 1;
     } else {
-        middleIndex = swiper.activeIndex; // Only 1 slide visible
+        middleIndex = swiper.activeIndex;
     }
 
     let middleSlide = swiper.slides[middleIndex];
@@ -895,6 +889,7 @@ function updateMiddleSlideShadow(swiper) {
         middleSlide.classList.add("middle-slide");
     }
 }
+
 
         var swiper2 = new Swiper(".mySwiper2", {
             navigation: {
