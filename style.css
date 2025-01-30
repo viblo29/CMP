@@ -19,6 +19,8 @@
   position: relative;
   scroll-behavior: smooth;
   background: #FFF;
+  color: #333;
+
 }
 
 .page-title {
@@ -27,8 +29,6 @@
   gap: 12px;
   color: #F07566;
   font-family: "Hind Siliguri";
-  font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 1px;
@@ -101,7 +101,6 @@
   color: #333;
   font-family: "Work Sans", sans-serif;
   font-size: 32px;
-  font-weight: 400;
   line-height: 32px;
   display: block;
   transition: 0.3s;
@@ -144,7 +143,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #333;
   font-family: "Hind Siliguri", serif;
   font-size: 40px;
   font-weight: 700;
@@ -240,7 +238,6 @@
 
 .page1-text-3 {
   max-width: 470px;
-  color: #333;
   font-family: "Work Sans", serif;
   font-size: 20px;
   font-weight: 400;
@@ -479,7 +476,6 @@
 
 .page2-text-2 {
   max-width: 328px;
-  color: #333;
   font-family: "Hind Siliguri";
   font-size: 56px;
   font-weight: 700;
@@ -494,7 +490,6 @@
 }
 
 .page2-text-3 {
-  color: #333;
   font-family: "Hind Siliguri";
   font-size: 24px;
   font-weight: 700;
@@ -505,10 +500,8 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #333;
+
   font-family: "Work Sans";
-  font-size: 16px;
-  font-weight: 400;
   line-height: 32px;
 }
 
@@ -593,7 +586,6 @@
 }
 
 .page3-h1 {
-  color: #333;
   font-family: "Hind Siliguri";
   font-size: 24px;
   font-weight: 700;
@@ -603,8 +595,6 @@
 .page3-h2 {
   color: rgba(51, 51, 51, 0.5);
   font-family: "Work Sans";
-  font-size: 16px;
-  font-weight: 400;
   line-height: 32px;
 }
 
@@ -638,7 +628,6 @@
 
 .pg4-txt-2 {
   max-width: 387px;
-  color: #333;
   font-family: "Hind Siliguri";
   font-size: 56px;
   font-weight: 700;
@@ -647,10 +636,7 @@
 
 .pg4-txt-3 {
   max-width: 470px;
-  color: #333;
   font-family: "Work Sans";
-  font-size: 16px;
-  font-weight: 400;
   line-height: 32px;
 }
 
@@ -675,7 +661,6 @@
 }
 
 .modernTech {
-  color: #333;
   font-family: "Hind Siliguri";
   font-size: 24px;
   font-weight: 700;
@@ -777,7 +762,6 @@
 }
 
 .page5-txt-2 {
-  color: #333;
   text-align: center;
   font-family: "Hind Siliguri";
   font-size: 56px;
@@ -790,8 +774,6 @@
   color: rgba(51, 51, 51, 0.50);
   text-align: center;
   font-family: "Work Sans";
-  font-size: 16px;
-  font-weight: 400;
   line-height: 32px;
 }
 
@@ -892,7 +874,6 @@
 }
 
 .page5-box-txt-1 {
-  color: #333;
   text-align: center;
   font-family: "Hind Siliguri";
   font-size: 24px;
@@ -904,8 +885,6 @@
   color: rgba(51, 51, 51, 0.50);
   text-align: center;
   font-family: "Work Sans";
-  font-size: 16px;
-  font-weight: 400;
   line-height: 32px;
 }
 
@@ -1009,7 +988,6 @@
 
 .page6-txt-2 {
   max-width: 500px;
-  color: #333;
   font-family: "Hind Siliguri";
   font-size: 56px;
   font-weight: 700;
@@ -1018,7 +996,6 @@
 
 .page6-txt-3-logos {
   max-width: 470px;
-  color: #333;
   font-family: "Work Sans";
   line-height: 32px;
   display: flex;
@@ -1052,7 +1029,6 @@
 }
 
 .pg6-logo-txt1 {
-  color: #333;
   font-family: "Hind Siliguri";
   font-size: 40px;
   font-weight: 700;
@@ -1257,7 +1233,6 @@
 }
 
 .page8-txt2 {
-  color: #333;
   text-align: center;
   font-family: "Hind Siliguri";
   font-size: 56px;
@@ -1271,7 +1246,6 @@
   max-width: 770px;
   color: rgba(51, 51, 51, 0.50);
   text-align: center;
-  font-size: 16px;
   font-family: "Work Sans";
   line-height: 32px;
   padding-left: 23px;
@@ -1345,7 +1319,6 @@
 }
 
 .slideBox-txt-1 {
-  color: #333;
   font-family: "Hind Siliguri";
   font-size: 24px;
   font-weight: 700;
@@ -1355,8 +1328,6 @@
 .slideBox-txt-2 {
   color: rgba(51, 51, 51, 0.50);
   font-family: "Work Sans";
-  font-size: 16px;
-  font-weight: 400;
   line-height: 32px;
 }
 
@@ -1442,7 +1413,6 @@
 }
 
 .page9-txt-2 {
-  color: #333;
   font-family: "Hind Siliguri";
   font-size: 56px;
   font-weight: 700;
@@ -1486,7 +1456,6 @@
 }
 
 .pg9-txt-box-txt2 {
-  color: #333;
   font-family: "Hind Siliguri";
   font-size: 24px;
   font-style: normal;
@@ -1607,7 +1576,6 @@ height: 152px;
   border-radius: 6px;
   background: #FBD34B;
   border: 0;
-  color: #333;
   text-align: center;
   font-family: "Hind Siliguri";
   font-size: 16px;
@@ -1649,7 +1617,6 @@ height: 152px;
 .page10-email-text {
   width: 363px;
   height: 48px;
-  color: #333;
   font-family: "Hind Siliguri";
   font-size: 40px;
   font-style: normal;
@@ -1676,8 +1643,6 @@ height: 152px;
   color: rgba(51, 51, 51, 0.50);
   font-family: "Work Sans";
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 32px;
   padding-left: 16px;
   padding-top: 9px;
@@ -1706,7 +1671,6 @@ height: 152px;
 
 .page11-txt-2 {
   padding-top: 20px;
-  color: #333;
   text-align: center;
   font-family: "Hind Siliguri";
   font-size: 56px;
@@ -1722,9 +1686,6 @@ height: 152px;
   color: rgba(51, 51, 51, 0.50);
   text-align: center;
   font-family: "Work Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 32px;
 
 }
@@ -1764,7 +1725,6 @@ height: 152px;
 
 .pg11-topBox-txt1 {
   width: 450px;
-  color: #333;
   font-family: "Hind Siliguri";
   font-size: 40px;
   font-style: normal;
@@ -1774,7 +1734,6 @@ height: 152px;
 
 .pg11-topBox-txt2 {
   width: 494px;
-  color: #333;
   font-family: "Work Sans";
   font-size: 20px;
   font-weight: 400;
@@ -1833,7 +1792,6 @@ height: 152px;
 
 .pg11-box-txt {
   padding-left: 16px;
-  color: #333;
   font-family: "Hind Siliguri";
   font-size: 24px;
   font-weight: 700;
@@ -1921,7 +1879,6 @@ height: 152px;
 .footer-navigation-title {
   color: #F07566;
   font-family: "Hind Siliguri";
-  font-size: 16px;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 1px;
@@ -1931,8 +1888,6 @@ height: 152px;
 .footer-navigation nav a {
   color: #FFF;
   font-family: "Work Sans";
-  font-size: 16px;
-  font-weight: 400;
   line-height: 32px;
   color: white;
   text-decoration: none;
@@ -1952,8 +1907,6 @@ height: 152px;
 .footer-navigation2 nav a {
   color: #FFF;
   font-family: "Work Sans";
-  font-size: 16px;
-  font-weight: 400;
   line-height: 32px;
   color: white;
   text-decoration: none;
@@ -1994,8 +1947,6 @@ height: 152px;
 .copyright {
   color: rgba(255, 255, 255, 0.50);
   font-family: "Work Sans";
-  font-size: 16px;
-  font-weight: 400;
   line-height: 32px;
 }
 
@@ -2005,10 +1956,13 @@ height: 152px;
   color: #FFF;
   text-align: right;
   font-family: "Work Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 32px;
+}
+.terms:hover{
+  cursor: pointer;
+}
+.privacy:hover{
+  cursor: pointer;
 }
 
 
@@ -2304,7 +2258,6 @@ border: 1px solid #E6EDF5;
 
   .page11-txt-2 {
     padding-top: 18px;
-    color: #333;
     text-align: center;
     font-size: 51px;
     font-weight: 700;
@@ -2676,7 +2629,6 @@ border: 1px solid #E6EDF5;
 
   .page11-txt-2 {
     padding-top: 18px;
-    color: #333;
     text-align: center;
     font-size: 48px;
     font-weight: 700;
@@ -3035,7 +2987,6 @@ height: 464px;
 
   .pg11-topBox-txt1 {
     width: 340px;
-    color: #333;
     font-size: 35px;
     font-weight: 700;
     line-height: 48px;
@@ -3198,7 +3149,6 @@ height: 464px;
     gap: 20px;
   }
   .page1-text-2{
-    color: #333;
     font-family: "Hind Siliguri";
     font-size: 56px;
     font-weight: 700;
@@ -3236,7 +3186,6 @@ height: 464px;
   }
   .page2-text-2{
     width: 231px;
-    color: #333;
 font-family: "Hind Siliguri";
 font-size: 40px;
 font-weight: 700;
@@ -3244,7 +3193,6 @@ line-height: 48px;
 letter-spacing: -1px;
   }
   .page2-text-3{
-    color: #333;
 font-family: "Hind Siliguri";
 font-size: 24px;
 font-weight: 700;
@@ -3295,7 +3243,6 @@ line-height: 32px;
     gap: 15px;
   }
   .pg4-txt-2{
-    color: #333;
 font-family: "Hind Siliguri";
 font-size: 40px;
 font-weight: 700;
@@ -3303,7 +3250,6 @@ line-height: 48px;
 letter-spacing: -1px;
   }
   .pg4-txt-3{
-    color: #333;
 font-family: "Work Sans";
 line-height: 32px;
   }
@@ -3401,7 +3347,6 @@ line-height: 32px;
     gap: 17px;
   }
   .page6-txt-2{
-    color: #333;
 font-family: "Hind Siliguri";
 font-size: 40px;
 font-weight: 700;
@@ -3421,7 +3366,6 @@ letter-spacing: -1px;
     gap: 17px;
   }
   .page8-txt2{
-    color: #333;
 text-align: center;
 font-family: "Hind Siliguri";
 font-size: 40px;
@@ -3451,7 +3395,6 @@ letter-spacing: -1px;
     gap: 17px;
   }
   .page9-txt-2{
-    color: #333;
 font-family: "Hind Siliguri";
 font-size: 40px;
 font-weight: 700;
@@ -3539,7 +3482,6 @@ box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
   
     .pg11-topBox-txt1 {
       width: 290px;
-      color: #333;
       font-size: 35px;
       font-weight: 700;
       line-height: 48px;
