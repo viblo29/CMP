@@ -56,9 +56,9 @@ const button = document.getElementById('browse')
 
 MainBoxes.style.display = "none"
 let visible = false
-MainBox1.style.opacity = 0;
-MainBox1.style.visibility = "hidden";  
-MainBox1.style.transition = "opacity 1s ease-in-out, visibility 0s 1s"; 
+MainBoxes.style.opacity = 0;
+MainBoxes.style.visibility = "hidden";  
+MainBoxes.style.transition = "opacity 1s ease-in-out, visibility 0s 1s"; 
 button.addEventListener('click', function (event) {
     event.preventDefault();
     setTimeout(() => {
@@ -70,7 +70,8 @@ button.addEventListener('click', function (event) {
                 MainBoxes.style.height = "0px"
             }, 500); 
         } else {
-            MainBoxes.style.display = "flex";  
+            MainBoxes.style.display = "flex"; 
+             
             setTimeout(() => {
                 MainBoxes.style.height = "auto"
                 MainBoxes.style.opacity = 1; 
