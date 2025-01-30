@@ -570,6 +570,7 @@ nav a {
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
+  transition-duration: 0.3s;
 }
 
 .page3-h1 {
@@ -1833,11 +1834,12 @@ height: 152px;
 }
 
 .pg11-mid-box:hover{
+  cursor: pointer;
   scale: 1.05;
   border-radius: 8px;
   background: #FFF;
   box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
 }
 
 .pg11-other-boxes2 {
@@ -1846,11 +1848,12 @@ height: 152px;
 }
 
 .pg11-box:hover{
+  cursor: pointer;
   scale: 1.05;
   border-radius: 8px;
   background: #FFF;
   box-shadow: 0px 24px 48px 0px rgba(0, 17, 86, 0.08);
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
 }
 
 .pg11-otherBoxes-btn {
