@@ -933,6 +933,22 @@ nav a {
   padding-left: 135px;
   padding-right: 135px;
   padding-bottom: 105px;
+  animation: marquee 15s linear infinite;
+  overflow: hidden;
+}
+
+.logos div {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }
 
 .logos2 {
