@@ -45,30 +45,11 @@ button1.addEventListener('click', function (event) {
                 MainBox1.style.visibility = "visible";  
             }, 10);  
         }
-        MainBox1.scrollIntoView({ behavior: 'smooth', block: 'start' });
         visible1 = !visible1;
     }, 500);  
 });
-// const MainBox1 = document.getElementById('page5-img-5-6')
-// const button1 = document.getElementById('browseAll')
 
-// MainBox1.style.display = "none"
 
-// let visible1 = false
-
-// button1.addEventListener('click',function(event){
-//     event.preventDefault();
-    
-//     setTimeout(() => {
-//         if (visible1) {
-//             MainBox1.style.display = "none"
-
-//         } else {
-//             MainBox1.style.display = "flex"
-//         }
-//         visible1 = !visible1
-//     }, 500);
-// });
 
 const MainBoxes = document.getElementById('mainboxes')
 const button = document.getElementById('browse')
@@ -96,7 +77,7 @@ button.addEventListener('click', function (event) {
                 MainBoxes.style.visibility = "visible";  
             }, 100);  
         }
-        MainBoxes.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
         visible = !visible;
     }, 500);  
 });
